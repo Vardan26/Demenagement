@@ -1,0 +1,30 @@
+@import "reset.css";
+.page {
+  display: block;
+  position: relative;
+  margin: 60px auto;
+  width: 999px;
+  height: 555px;
+  background-image: url(../img/text.png);
+}
+.page__title {
+  position: relative;
+  left: 485px;
+  top: 42px;
+  font-size: 65px;
+  color: #3a3879;
+  width: 500px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 76px;
+}
+.page__list {
+  position: relative;
+  text-align: right;
+  margin: 190px 50px;
+}
+.page__list__item {
+  font-size: 35px;
+  color: #fff;
+  line-height: 45px;
+}
