@@ -20,10 +20,10 @@
   }
 
   &__list {
+    width: 40%;
     position: relative;
     float: right;
     right: 100px;
-    width: 40%;
     display: inline-block;
       &__title{
       position: relative;
@@ -33,11 +33,13 @@
       letter-spacing: 1px;
       line-height: 76px;
       text-align: right;
+        display: block;
     }
     &__link{
       position: relative;
-      margin:  70px 0;
-      font-size: 60px;
+      margin:  100px 0;
+      font-size: 50px;
+      font-family: Arial sans-serif;
       color: #7a1608;
       letter-spacing: 3px;
       text-align: right;
@@ -51,11 +53,13 @@
       &__item {
         text-align: right;
         font-size: 35px;
-        color: #fff;
-        line-height: 45px;
+        line-height: 55px;
         display: block;
-        &__email {
-          margin: 10px 0;
+        color: #fff;
+        &__tel,
+        &__email{
+          text-decoration: none;
+          color: #fff;
         }
       }
     }

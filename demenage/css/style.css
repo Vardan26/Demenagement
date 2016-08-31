@@ -18,10 +18,10 @@
   display: inline-block;
 }
 .page__list {
+  width: 40%;
   position: relative;
   float: right;
   right: 100px;
-  width: 40%;
   display: inline-block;
 }
 .page__list__title {
@@ -32,11 +32,13 @@
   letter-spacing: 1px;
   line-height: 76px;
   text-align: right;
+  display: block;
 }
 .page__list__link {
   position: relative;
-  margin: 70px 0;
-  font-size: 60px;
+  margin: 100px 0;
+  font-size: 50px;
+  font-family: Arial sans-serif;
   color: #7a1608;
   letter-spacing: 3px;
   text-align: right;
@@ -51,10 +53,12 @@
 .page__list__items__item {
   text-align: right;
   font-size: 35px;
-  color: #fff;
-  line-height: 45px;
+  line-height: 55px;
   display: block;
+  color: #fff;
 }
+.page__list__items__item__tel,
 .page__list__items__item__email {
-  margin: 10px 0;
+  text-decoration: none;
+  color: #fff;
 }
