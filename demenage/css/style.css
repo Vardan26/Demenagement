@@ -1,5 +1,4 @@
 @import "reset.css";
-@import "mq.css";
 .page {
   display: block;
   position: absolute;
@@ -14,63 +13,193 @@
 .page__img--car {
   width: 50%;
   float: left;
-  margin: 40px 0 0 30px ;
+  margin: 40px 0 0 30px;
   height: auto;
   display: inline-block;
 }
 .page__title {
-  top: 40px;
+  top: 0;
   font-size: 65px;
   color: #3a3879;
   letter-spacing: 1px;
   text-align: right;
-  display: block;
-  right: 60px;
+  right: 4%;
   height: auto;
-  position: relative;
-}
-.page__list {
-  width: 45%;
   position: absolute;
-  height: auto;
-  bottom: 20px;
-  float: right;
-  right: 60px;
-  display: inline-block;
+  margin: 0;
 }
-.page__list__link {
-  position: relative;
-  margin: 0 0 100px;
+.page__link {
+  position: absolute;
   font-size: 50px;
   font-family: Arial sans-serif;
   color: #7a1608;
   letter-spacing: 3px;
   text-align: right;
+  right: 4%;
+  height: auto;
   text-decoration: none;
-  display: block;
+  top: 40%;
   font-weight: 600;
 }
-.page__list__items__item {
+.page__list {
+  width: 45%;
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  float: right;
+  right: 4%;
+  display: inline-block;
+}
+.page__list__item {
   text-align: right;
   font-size: 32px;
   line-height: 55px;
   color: #fff;
   display: block;
 }
-.page__list__items__item__icon {
+.page__list__item__icon {
   width: 40px;
   height: auto;
-  display: inline-block;
   position: relative;
   top: 10px;
   right: 20px;
 }
-.page__list__items__item__icon--cell {
+.page__list__item__icon--cell {
   top: 35px;
 }
-.page__list__items__item__tel,
-.page__list__items__item__email {
+.page__list__item__tel,
+.page__list__item__email {
   text-decoration: none;
   color: #fff;
-  display: inline-block;
+}
+@media all and (max-width: 1260px) {
+  .page__title {
+    font-size: 60px;
+  }
+  .page__link {
+    font-size: 45px;
+  }
+  .page__list__item {
+    font-size: 28px;
+    line-height: 45px;
+  }
+}
+@media all and (max-width: 1100px) {
+  .page__title {
+    font-size: 50px;
+    right: 30px;
+  }
+  .page__link {
+    font-size: 40px;
+  }
+  .page__list__item {
+    font-size: 25px;
+    line-height: 45px;
+  }
+}
+@media all and (max-width: 1100px) {
+  .page__title {
+    font-size: 50px;
+  }
+  .page__link {
+    font-size: 40px;
+  }
+  .page__list__item {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .page__list__item__icon--cell {
+    top: 25px;
+  }
+}
+@media all and (max-width: 900px) {
+  .page__title {
+    font-size: 40px;
+    text-align: left;
+    left: 2%;
+  }
+  .page__link {
+    font-size: 30px;
+    top: 25%;
+  }
+  .page__list__item {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .page__img--car {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    margin: 0;
+  }
+  .page__list__item__icon {
+    width: 30px;
+  }
+}
+@media all and (max-width: 800px) {
+  .page__link {
+    font-size: 25px;
+  }
+  .page__list__item {
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .page__list__item__icon {
+    width: 25px;
+  }
+}
+@media all and (max-width: 720px) {
+  .page__title {
+    font-size: 30px;
+  }
+  .page__link {
+    font-size: 22px;
+  }
+  .page__list__item {
+    line-height: 30px;
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 640px) {
+  .page__list__item {
+    line-height: 25px;
+  }
+  .page__list__item__icon {
+    width: 20px;
+    top: 5px;
+  }
+  .page__list__item__icon--cell {
+    top: 15px;
+  }
+}
+@media all and (max-width: 490px) {
+  .page__link {
+    font-size: 20px;
+  }
+  .page__list__item {
+    font-size: 14px;
+  }
+  .page__list__item__icon {
+    width: 18px;
+    top: 5px;
+  }
+  .page__list__item__icon--cell {
+    top: 15px;
+  }
+}
+@media all and (max-width: 430px) {
+  .page__title {
+    font-size: 25px;
+  }
+  .page__link {
+    font-size: 20px;
+  }
+  .page__list__item {
+    line-height: 20px;
+  }
+  .page__list__item__icon {
+    width: 16px;
+  }
 }
