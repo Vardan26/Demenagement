@@ -1,33 +1,88 @@
 <!doctype html>
 <html class="no-js" lang="">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title></title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<!-- Place favicon.ico in the root directory use this `http://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory use this `http://realfavicongenerator.net/ -->
 
 
-	<!-- Place Google fonts here -->
+    <!-- Place Google fonts here -->
 
-	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form.css">
 
-	<script src="js/prefixfree.min.js"></script>
-	<!--<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+    <script src="js/prefixfree.min.js"></script>
+    <!--<script src="js/vendor/modernizr-2.8.3.min.js"></script>-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
+<body class="page--form">
 
 
+<header class="page--form__header">
+    <img src="img/l'officielLogo.png" class="page--form__header__logo">
+    <form class="page--form__header__form">
+        <span class="page--form__header__form__label">Nom:</span>
+        <input type="text" class="page--form__header__form__input"><br>
+        <span class="page--form__header__form__label">N° dossier:</span>
+        <input type="text" class="page--form__header__form__input">
+    </form>
+</header>
+<article class="page--form__article">
+    <div class="page--form__article__txt">
+        <p>
+            Déménager avec l’Officiel du déménagement,
+            c’est être certain du professionnalisme de nos équipes et plus encore,
+            de leur entrain à vous rendre votre déménagement agréable.
+        </p>
+        <p>
+            Parce que chacun de nos clients est unique,
+            votre conseiller l’Officiel du déménagement souhaite,
+            afin de mieux visualiser votre déménagement,
+            étudier la liste de votre mobilier à déménager.
+        </p>
+    </div>
+    <div class="page--form__article__contact">
 
+        <ul class="page--form__article__contact__list">
+            <li class="page--form__article__contact__list__item">
+                <span class="page--form__article__contact__list__item__title"><b>Liste de mobilier</b><br>
+                a compléter et nous retourner par :
+                </span>
+            </li>
+            <li class="page--form__article__contact__list__item">
+                <span class="page--form__article__contact__list__item__name">Email:</span>
+                <a class="page--form__article__contact__list__item__address" href="mailto:joseph.demenage@gmail.com?subject=Welcome&body=Check this out,
+                please click <a href='service-clients@officiel-demenagement.com'>here</a>">service-clients@officiel-demenagement.com</a>
+            </li>
+            <li class="page--form__article__contact__list__item">
+
+                <span class="page--form__article__contact__list__item__name">fax  :</span>
+                <span class="page--form__article__contact__list__item__address">02 40 95 05 89</span>
+            </li>
+            <li class="page--form__article__contact__list__item">
+                <span class="page--form__article__contact__list__item__name">Courrier:</span>
+                <span class="page--form__article__contact__list__item__address">L'Officiel du déménagement <br> BP 98822 - 44188 Nantes Cedex 4</span>
+            </li>
+            <li class="page--form__article__contact__list__item">
+                <img src="img/cel2.png" class="page--form__article__contact__list__item__icon">
+                <span class="page--form__article__contact__list__item__cell">
+                    <b>Votre conseiller en déménagement :</b><br>
+                    <a class="page--form__article__contact__list__item__address" href="tel:0811094645">0 811 09 46 45</a>/
+                    <a class="page--form__article__contact__list__item__address" href="tel:0253006450">02 53 00 64 50</a>
+                </span>
+            </li>
+        </ul>
+    </div>
+</article>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -38,13 +93,13 @@
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
-	window.ga = function () {
-		ga.q.push(arguments)
-	};
-	ga.q = [];
-	ga.l = +new Date;
-	ga('create', 'UA-XXXXX-Y', 'auto');
-	ga('send', 'pageview')
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
