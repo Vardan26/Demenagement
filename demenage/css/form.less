@@ -108,7 +108,7 @@
       display: block;
       text-align: center;
       text-transform: capitalize;
-      margin: 15px 0 0;
+      margin: 15px 0 ;
     }
     &--txt{
       font-size: 16px;
@@ -127,13 +127,6 @@
       position: relative;
       &--color {
         background-color: #d9d9d9;
-      }
-      &__title {
-        width: 25%;
-        height: auto;
-        display: inline-block;
-        position: relative;
-        left: 5px;
       }
       &__dash{
         border: none;
@@ -169,10 +162,17 @@
         display: inline-block;
         text-align: left;
         position: relative;
+        &--1 {
+          width: 25%;
+          height: auto;
+          display: inline-block;
+          position: relative;
+          left: 5px;
+        }
         &--first{
           text-align: right;
         }
-        &--4{
+        &--5{
           width: 8%;
         }
         &--min{
@@ -183,4 +183,7 @@
 
     }
   }
+}
+.hide{
+  opacity: 0;
 }
