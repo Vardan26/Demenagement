@@ -1,42 +1,36 @@
 @import "reset.css";
 
 .page--form {
-  max-width: 1300px;
+  max-width: 1320px;
   display: block;
   margin: auto;
+  font-family: 'Arial', serif;
   &__header {
     width: 100%;
-    height: 170px;
+    height: 200px;
     position: relative;
     &__logo {
-      width: 65%;
+      width: 75%;
       display: inline-block;
     }
     &__form {
-      width: 20%;
+      width: 24%;
       display: inline-block;
-      position: absolute;
-      top: 22%;
-      right: 0;
-      vertical-align: top;
-      line-height: 50px;
+      position: relative;
+      bottom: 62px;
+      font-size: 20px;
+      text-align: right;
+      line-height: 63px;
       &__label {
-        text-align: justify;
-        margin-left: 5%;
-        position: relative;
-        bottom: 13px;
-        left: 0;
-        font-weight: bold;
         font-style: italic;
       }
       &__input {
-        position: inherit;
-        right: 0;
+        position: relative;
+        left: 19px;
         border: none;
         border-bottom: dashed 1px #000;
-        width: 50%;
+        width: 42%;
         outline: none;
-
       }
     }
   }
@@ -44,34 +38,41 @@
     width: 100%;
     height: auto;
     position: relative;
+    margin-bottom: 10px;
     &__txt {
-      width: 49%;
+      width: 46%;
       height: auto;
+      margin-right: 10px;
       display: inline-block;
       position: relative;
       text-align: left;
       vertical-align: top;
+      font-size: 23px;
     }
 
     &__contact {
-      width: 49%;
+      width: 52%;
       display: inline-block;
-      margin-left: 1%;
       position: relative;
       &__list__item {
         list-style: none;
         position: relative;
-        line-height: 25px;
+        margin-top: 2px;
         &__title {
           text-align: center;
           background-color: #d9d9d9;
           display: block;
+          font-size: 23px;
+          line-height: 33px;
+
         }
         &__name {
           font-weight: bold;
-          margin-right: 5%;
+          margin-right: 10%;
           position: relative;
           vertical-align: top;
+          font-size: 23px;
+          line-height: 32px;
 
         }
         &__address {
@@ -79,17 +80,21 @@
           text-decoration: none;
           position: relative;
           color: #000;
+          font-size: 23px;
+          line-height: 32px;
+
         }
         &__icon {
-          width: 35px;
+          width: 60px;
           position: relative;
           display: inline-block;
         }
         &__cell {
           position: relative;
           text-align: left;
-          vertical-align: top;
+          font-size: 23px;
           display: inline-block;
+          margin-left: 12px;
         }
       }
     }
@@ -100,8 +105,7 @@
     width: 100%;
     margin:0 auto 50px;
     padding-bottom: 15px;
-    border: 2px solid #000;
-    font-family: 'Arial', serif;
+    border: 3px solid #000;
     &__title {
       width: 100%;
       background-color: #b22127;
@@ -110,21 +114,24 @@
       text-align: center;
       text-transform: capitalize;
       margin: 15px 0 ;
+      font-size: 23px;
+      height: 33px;
     }
     &--txt{
-      font-size: 16px;
+      font-size: 20px;
     }
     &__txt--top {
-      width: 95%;
+      width: 97%;
       display: block;
-      margin: 10px auto;
+      margin: 18px auto;
       text-align: left;
+      font-size: 20px;
     }
     &__row {
-      width: 95%;
+      width: 97%;
       display: block;
       margin: 0 auto;
-      line-height: 30px;
+      line-height: 29px;
       position: relative;
       &--color {
         background-color: #d9d9d9;
@@ -132,7 +139,7 @@
       &__title--min{
         background-color: #a7a7a7;
         font-weight: bold;
-        width: 26%;
+        width: 29.5%;
         height: 30px;
         line-height: 30px;
         margin: 0;
@@ -142,24 +149,28 @@
         border: none;
         border-bottom: dashed 1px #000;
         background-color: inherit;
-        height: 30px;
+        height: 25px;
         padding: 0;
         outline: none;
-        &--3{
-          width: 56%;
+        &--lg{
+          width: 49%;
         }
-        &--1{
+        &--md{
           width: 19%;
         }
-        &--min{
-          width: 10%;
+        &--sm{
+          width: 9%;
+        }
+        &--xs{
+          width: 5%;
         }
       }
       &__check {
-        width: 30px;
-        height: 30px;
+        width: 45px;
+        height: 29px;
         vertical-align: middle;
         position: relative;
+        padding:0;
         left: 0;
         margin: 0;
         &--min{
@@ -168,12 +179,12 @@
         }
       }
       &__label{
-        width: 15%;
+        width: 12.5%;
         display: inline-block;
         text-align: left;
         position: relative;
         &--1 {
-          width: 25%;
+          width: 29%;
           height: auto;
           display: inline-block;
           position: relative;
@@ -181,19 +192,45 @@
         }
         &--first{
           text-align: right;
+          margin-right: 50px;
         }
         &--5{
-          width: 8%;
+          width: 10%;
         }
         &--min{
-          width: 5%;
+          width: 3%;
           font-size: 12px;
         }
       }
-
+      &__textarea{
+        border: none;
+        width: 100%;
+        line-height:36px;
+        height: 350px;
+        background-image: url("../img/textarea.jpg");
+      }
+    }
+  }
+  &__footer{
+    &__sign{
+      margin:0 0 30px 43%;
+    }
+    &__txt{
+      width: 60%;
+      text-align: right;
+      font-size: 16px;
+      position: relative;
+      left: 20%;
+      display: inline-block;
+    }
+    &__img{
+      width: 75px;
+      height: auto;
+      position: relative;
+      left: 20%;
+      margin: 0 25px;
+      display: inline-block;
     }
   }
 }
-.hide{
-  opacity: 0;
-}
+
