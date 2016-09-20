@@ -11,10 +11,13 @@
                   <CssDirectory>
                     <option name="path" value="C:\Users\Vardan\Desktop\folder\Demenagement\demenage\css" />
                   </CssDirectory>
+                  <CssDirectory>
+                    <option name="path" value="C:\Users\Vardan\Desktop\folder\Demenagement\css" />
+                  </CssDirectory>
                 </list>
               </option>
               <option name="id" value="0" />
-              <option name="lessDirPath" value="C:\Users\Vardan\Desktop\folder\Demenagement\demenage\css" />
+              <option name="lessDirPath" value="C:\Users\Vardan\Desktop\folder\Demenagement\css" />
               <option name="name" value="deman" />
             </LessProfile>
           </value>
