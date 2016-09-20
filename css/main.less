@@ -1,0 +1,508 @@
+@import "mixinsAndGlobals.less";
+@import "cssreset-min.less";
+@import "normalize.less";
+@import "default.less";
+
+//generates fonts using http://transfonter.org/
+
+.page {
+  display: block;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/aliq.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  &__img--car {
+    width: 50%;
+    float: left;
+    margin: 40px 0 0 30px;
+    height: auto;
+    display: inline-block;
+  }
+  &__title {
+    top: 0;
+    font-size: 65px;
+    color: #3a3879;
+    letter-spacing: 1px;
+    text-align: right;
+    right: 4%;
+    height: auto;
+    position: absolute;
+    margin: 0;
+
+  }
+  &__link {
+    position: absolute;
+    font-size: 50px;
+    font-family: Arial sans-serif;
+    color: #7a1608;
+    letter-spacing: 3px;
+    text-align: right;
+    right: 4%;
+    height: auto;
+    text-decoration: none;
+    top: 40%;
+    font-weight: 600;
+  }
+
+  &__list {
+    width: 45%;
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    float: right;
+    right: 4%;
+    display: inline-block;
+
+    &__item {
+      text-align: right;
+      font-size: 32px;
+      line-height: 55px;
+      color: #fff;
+      display: block;
+      &__icon {
+        width: 40px;
+        height: auto;
+        position: relative;
+        top: 10px;
+        right: 20px;
+        &--cell {
+          top: 35px;
+        }
+      }
+      &__tel,
+      &__email {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}
+
+//form
+
+.body {
+  max-width: 1300px;
+  display: block;
+  margin: auto;
+  font-family: 'Arial', serif;
+}
+
+.header {
+  width: 100%;
+  height: 217px;
+  position: relative;
+  &__logo {
+    width: 75%;
+    display: inline-block;
+  }
+  &__form {
+    width: 22%;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    font-size: 20px;
+    text-align: right;
+    &__label {
+      font-style: italic;
+    }
+    &__input {
+      position: relative;
+      left: 19px;
+      border: none;
+      border-bottom: dashed 1px #000;
+      width: 42%;
+      outline: none;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+
+.article {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 10px;
+  &__txt {
+    width: 47%;
+    height: auto;
+    margin-right: 30px;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    font-size: 23px;
+  }
+
+  &__contact {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    &__list__item {
+      list-style: none;
+      position: relative;
+      margin-top: 2px;
+      &__title {
+        text-align: center;
+        background-color: #d9d9d9;
+        display: block;
+        font-size: 23px;
+        line-height: 33px;
+
+      }
+      &__name {
+        font-weight: bold;
+        margin-right: 10%;
+        position: relative;
+        vertical-align: top;
+        font-size: 23px;
+        line-height: 32px;
+
+      }
+      &__address {
+        display: inline-block;
+        text-decoration: none;
+        position: relative;
+        color: #000;
+        font-size: 23px;
+        line-height: 32px;
+
+      }
+      &__icon {
+        width: 60px;
+        position: relative;
+        display: inline-block;
+      }
+      &__cell {
+        position: relative;
+        text-align: left;
+        font-size: 23px;
+        display: inline-block;
+        margin-left: 12px;
+      }
+    }
+  }
+}
+.form--txt {
+  font-size: 20px;
+}
+
+.form {
+  display: block;
+  position: relative;
+  width: auto;
+  margin: 0 auto 50px;
+  padding-bottom: 15px;
+  border: 3px solid #000;
+  &__title {
+    width: 100%;
+    background-color: #b22127;
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 15px 0;
+    font-size: 23px;
+    height: 33px;
+  }
+
+  &__txt--top {
+    width: 97%;
+    display: block;
+    margin: 18px auto;
+    text-align: left;
+    font-size: 20px;
+  }
+  &__row {
+    width: 97%;
+    display: block;
+    margin: 0 auto;
+    line-height: 29px;
+    position: relative;
+    &--color {
+      background-color: #d9d9d9;
+    }
+    &__title--min {
+      background-color: #a7a7a7;
+      font-weight: bold;
+      width: 29.5%;
+      height: 30px;
+      line-height: 30px;
+      margin: 0;
+      text-align: center;
+    }
+    &__dash {
+      border: none;
+      border-bottom: dashed 1px #000;
+      background-color: inherit;
+      height: 25px;
+      padding: 0;
+      outline: none;
+      &--lg {
+        width: 49%;
+      }
+      &--md {
+        width: 19%;
+      }
+      &--sm {
+        width: 9%;
+      }
+      &--xs {
+        width: 5%;
+      }
+    }
+    &__check {
+      width: 43px;
+      height: 28px;
+      vertical-align: middle;
+      position: relative;
+      border: 2px solid #000;
+      padding: 0;
+      left: 0;
+      margin: 0;
+      &--min {
+        width: 15px;
+        height: 15px;
+      }
+    }
+    &__label {
+      width: 12.5%;
+      display: inline-block;
+      text-align: left;
+      position: relative;
+      &--1 {
+        width: 29%;
+        height: auto;
+        display: inline-block;
+        position: relative;
+        left: 5px;
+      }
+      &--first {
+        text-align: right;
+        margin-right: 50px;
+      }
+      &--5 {
+        width: 10%;
+      }
+      &--min {
+        width: 4%;
+        font-size: 12px;
+      }
+    }
+    &__textarea {
+      border: none;
+      width: 100%;
+      line-height: 36px;
+      height: 350px;
+      background-image: url("../img/textarea.jpg");
+      outline: none;
+    }
+  }
+}
+
+.footer {
+  margin: 0 auto 30px;
+  &__sign {
+    margin: 0 0 30px 43%;
+  }
+  &__txt {
+    width: 60%;
+    text-align: right;
+    font-size: 16px;
+    position: relative;
+    left: 18%;
+    display: inline-block;
+  }
+  &__img {
+    width: 75px;
+    height: auto;
+    position: relative;
+    left: 20%;
+    margin: 0 25px;
+    display: inline-block;
+  }
+}
+
+
+//page responsiveness
+
+@media(max-width: 1260px) {
+  .page__title {
+    font-size: 60px;
+  }
+
+  .page__link {
+    font-size: 45px;
+  }
+
+  .page__list__item {
+    font-size: 28px;
+    line-height: 45px;
+  }
+}
+
+@media(max-width: 1100px) {
+  .page__title {
+    font-size: 50px;
+    right: 30px;
+  }
+
+  .page__link {
+    font-size: 40px;
+  }
+
+  .page__list__item {
+    font-size: 25px;
+    line-height: 45px;
+  }
+}
+
+@media(max-width: 1100px) {
+  .page__title {
+    font-size: 50px;
+  }
+
+  .page__link {
+    font-size: 40px;
+  }
+
+  .page__list__item {
+    font-size: 22px;
+    line-height: 35px;
+  }
+
+  .page__list__item__icon--cell {
+    top: 25px;
+  }
+}
+
+@media(max-width: 900px) {
+  .page__title {
+    font-size: 40px;
+    text-align: left;
+    left: 2%;
+  }
+
+  .page__link {
+    font-size: 30px;
+    top: 25%;
+  }
+
+  .page__list__item {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .page__img--car {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    margin: 0;
+  }
+
+  .page__list__item__icon {
+    width: 30px;
+  }
+}
+
+@media(max-width: 800px) {
+  .page__link {
+    font-size: 25px;
+  }
+
+  .page__list__item {
+    line-height: 30px;
+    font-size: 18px;
+  }
+
+  .page__list__item__icon {
+    width: 25px;
+  }
+}
+
+@media(max-width: 720px) {
+  .page__title {
+    font-size: 30px;
+  }
+
+  .page__link {
+    font-size: 22px;
+  }
+
+  .page__list__item {
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+}
+
+@media(max-width: 640px) {
+
+  .page__list__item {
+    line-height: 25px;
+  }
+
+  .page__list__item__icon {
+    width: 20px;
+    top: 5px;
+  }
+
+  .page__list__item__icon--cell {
+    top: 15px;
+  }
+}
+
+@media(max-width: 490px) {
+
+  .page__link {
+    font-size: 20px;
+  }
+
+  .page__list__item {
+    font-size: 14px;
+  }
+
+  .page__list__item__icon {
+    width: 18px;
+    top: 5px;
+  }
+
+  .page__list__item__icon--cell {
+    top: 15px;
+  }
+}
+
+@media(max-width: 430px) {
+  .page__title {
+    font-size: 25px;
+  }
+
+  .page__link {
+    font-size: 20px;
+  }
+
+  .page__list__item {
+    line-height: 20px;
+  }
+
+  .page__list__item__icon {
+    width: 16px;
+  }
+
+}
+
+//form responsiveness
+
+@media(max-width: 1120px) {
+    .article__txt{
+      width: 50%;
+    }
+  }

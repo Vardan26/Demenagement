@@ -1241,6 +1241,9 @@ pre {
   background-image: url("../img/textarea.jpg");
   outline: none;
 }
+.footer {
+  margin: 0 auto 30px;
+}
 .footer__sign {
   margin: 0 0 30px 43%;
 }
@@ -1249,7 +1252,7 @@ pre {
   text-align: right;
   font-size: 16px;
   position: relative;
-  left: 20%;
+  left: 18%;
   display: inline-block;
 }
 .footer__img {
@@ -1389,5 +1392,10 @@ pre {
   }
   .page__list__item__icon {
     width: 16px;
+  }
+}
+@media (max-width: 1120px) {
+  .article__txt {
+    width: 50%;
   }
 }
