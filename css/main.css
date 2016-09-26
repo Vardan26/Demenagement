@@ -959,11 +959,9 @@ pre {
   }
 }
 .page {
-  display: block;
-  position: absolute;
-  margin: auto;
   width: 100%;
   height: 100%;
+  position: absolute;
   background-image: url(../img/aliq.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -971,7 +969,8 @@ pre {
 }
 .page__img--car {
   width: 50%;
-  float: left;
+  position: absolute;
+  left: 0;
   margin: 40px 0 0 30px;
   height: auto;
   display: inline-block;
@@ -983,31 +982,40 @@ pre {
   letter-spacing: 1px;
   text-align: right;
   right: 4%;
-  height: auto;
-  position: absolute;
+  width: 100%;
+  position: relative;
+  display: block;
   margin: 0;
 }
 .page__link {
-  position: absolute;
-  font-size: 50px;
-  font-family: Arial sans-serif;
+  position: relative;
+  width: auto;
+  display: block;
+  font-size: 30px;
+  font-family: 'Arial', sans-serif;
   color: #7a1608;
   letter-spacing: 3px;
   text-align: right;
   right: 4%;
-  height: auto;
+  margin: 5% auto 2%;
   text-decoration: none;
-  top: 40%;
   font-weight: 600;
 }
+.page__link__item {
+  width: auto;
+  display: block;
+  margin: 2% auto;
+}
+.page__link__item:hover {
+  border: 2px solid #7a1608;
+}
 .page__list {
-  width: 45%;
-  position: absolute;
+  width: 100%;
   height: auto;
-  bottom: 0;
-  float: right;
+  position: relative;
   right: 4%;
-  display: inline-block;
+  bottom: 0;
+  display: block;
 }
 .page__list__item {
   text-align: right;
@@ -1132,6 +1140,9 @@ pre {
 .form--txt {
   font-size: 20px;
 }
+.activeCheck {
+  border: 2px solid #3366cc;
+}
 .form {
   display: block;
   position: relative;
@@ -1212,6 +1223,9 @@ pre {
 .form__row__check--min {
   width: 15px;
   height: 15px;
+}
+.form__row__label:not(.form__row__label--1) {
+  cursor: pointer;
 }
 .form__row__label {
   width: 12.5%;
