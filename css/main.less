@@ -45,7 +45,7 @@
     letter-spacing: 3px;
     text-align: right;
     right: 4%;
-    margin: 5% auto 2%;
+    margin: 5% 0 3%;
     text-decoration: none;
     font-weight: 600;
   }
@@ -55,17 +55,18 @@
     margin: 2% auto;
   }
   &__link__item:hover{
-    border: 2px solid #7a1608;
+    color: #d52b2b;
   }
   &__list {
     width: 100%;
     height: auto;
-    position: relative;
+    position: fixed;
     right: 4%;
-    bottom: 0;
+    bottom: 2%;
     display: block;
 
     &__item {
+      width: auto;
       text-align: right;
       font-size: 32px;
       line-height: 55px;
@@ -354,10 +355,6 @@
     font-size: 60px;
   }
 
-  .page__link {
-    font-size: 45px;
-  }
-
   .page__list__item {
     font-size: 28px;
     line-height: 45px;
@@ -396,12 +393,9 @@
 @media (max-width: 1100px) {
   .page__title {
     font-size: 50px;
-    right: 30px;
   }
 
-  .page__link {
-    font-size: 40px;
-  }
+
 
   .page__list__item {
     font-size: 25px;
@@ -435,14 +429,11 @@
 @media (max-width: 900px) {
   .page__title {
     font-size: 40px;
-    text-align: left;
     left: 2%;
+    text-align: left;
   }
 
-  .page__link {
-    font-size: 30px;
-    top: 25%;
-  }
+
 
   .page__list__item {
     font-size: 20px;
@@ -452,7 +443,6 @@
   .page__img--car {
     width: 40%;
     height: auto;
-    position: absolute;
     bottom: 0;
     left: 2%;
     margin: 0;
