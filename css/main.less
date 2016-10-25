@@ -44,15 +44,18 @@ a:hover {
   opacity : 1;
   }
 
-.page.page--home {
-  position            : absolute;
-  overflow            : hidden;
-  width               : 100%;
-  height              : 100%;
-  background-image    : url(../img/aliq.png);
-  background-size     : 100%;
-  background-repeat   : no-repeat;
-  background-position : bottom right;
+.page{
+  &.page--home{
+    position            : absolute;
+    overflow            : hidden;
+    width               : 100%;
+    height              : 100%;
+    background-image    : url(../img/aliq.png);
+    background-size     : 100%;
+    background-repeat   : no-repeat;
+    background-position : bottom right;
+
+    }
 
   &__img--car {
     width    : 50%;
