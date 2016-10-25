@@ -12,6 +12,15 @@
  }
 
 
+ var endTime,
+     startTime = (new Date()).getTime();
+
+ window.addEventListener('load', function () {
+     endTime = (new Date()).getTime();
+     websiteDuration = endTime - startTime;
+     console.log("website loaded in: " + websiteDuration);
+     afterWebsiteLoaded(websiteDuration);
+ }, false);
 
 
 
@@ -58,8 +67,6 @@
  function onPlayerReady(event) {
      event.target.playVideo();
      player.mute();
-
-
  }
 
  var done = false;
@@ -77,9 +84,11 @@
  }
 
 
-
  function afterWebsiteLoaded(websiteDuration) {
-     $('#player').css({ width: $(window).innerWidth() + 'px', height: (($(window).innerWidth())*0.6625) + 'px' });
+     $('#player').css({
+         width: (($(window).innerWidth())) + 'px',
+         height: (($(window).innerWidth())*0.6625) + 'px'
+     });
      if (!($('.playThis').length)) {
          stopVideo();
          $('#player').addClass('hidden');
@@ -92,4 +101,4 @@
 
  window.onresize = function () {
      $('#player').css({ width: $(window).innerWidth() + 'px', height: (($(window).innerWidth())*0.6625) + 'px' });
- }
+ };
