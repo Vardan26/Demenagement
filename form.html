@@ -84,7 +84,7 @@
 </article>
 
 
-<form class="form">
+<form class="form" action="list_mobil.php" method="post">
     <h3 class="form__title">mobilier</h3>
     <p class="form__txt--top">Merci de compléter la liste de mobilier en
         y indiquant pour chaque meuble le nombre d'exemplaires à déménager.
@@ -219,7 +219,7 @@
         <input type="number" min="0" name="" id="row124" class="form__row__check">
         <label for="row124" class="form__txt form__row__label form__row__label--5">4
             portes</label>
-        <input type="checkbox" name=""  id="row125" class="form__row__check--min">
+        <input type="checkbox" name="" id="row125" class="form__row__check--min">
         <label for="row125" class="form__txt form__row__label form__row__label--min">Marbre</label>
     </fieldset>
     <fieldset class="form__row">
@@ -644,7 +644,7 @@
     <fieldset class="form__row">
         <label class="form__txt form__row__label form__row__label--1">Penderie
             tissu</label>
-        <input type="number" min="0" name=" class="form__row__check">
+        <input type="number" min="0" name=" class=" form__row__check">
     </fieldset>
     <fieldset class="form__row form__row--color form__row--lg">
         <label class="form__txt form__row__label form__row__label--1 form__row--lg__label--1">Piano
@@ -659,7 +659,7 @@
         <label for="row473" class="form__txt form__row__label form__row--lg__label form__row--lg__label--4">Type :</label>
         <input id="row474" type="text" class="form__row__dash form__row--lg__dash form__row__dash--sm">
         <div>
-            <label  class="form__txt form__row__label form__row__label--1 form__row--lg__label--1"></label>
+            <label class="form__txt form__row__label form__row__label--1 form__row--lg__label--1"></label>
             <label for="" class="form__txt form__row__label form__row--lg__label form__row__label--min form__row--lg__label--min">Cadre :</label>
             <input id="row475" type="checkbox" name="" class="form__row__check form__row__check--min form__row--lg__check--min">
             <label for="row475" class="form__txt form__row__label form__row--lg__label form__row__label--min form__row--lg__label--min">Bois</label>
@@ -1158,7 +1158,7 @@
     <label class="form__txt ">(Objets lourds, fragiles, service à vaisselle, …)</label>
 
     <textarea name="" form="" class="form__textarea"></textarea>
-
+    <button type="submit">submit</button>
 </form>
 <div class="footer">
     <div class="footer__sign">
@@ -1180,10 +1180,17 @@
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-86282210-1', 'auto');
     ga('send', 'pageview');
