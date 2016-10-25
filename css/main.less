@@ -44,8 +44,8 @@ a:hover {
   opacity : 1;
   }
 
-.page{
-  &.page--home{
+.page {
+  &.page--home {
     position            : absolute;
     overflow            : hidden;
     width               : 100%;
@@ -370,11 +370,18 @@ a:hover {
   &__sign {
     display : none;
     margin  : 0 0 30px 43%;
+    &__place {
+      display          : inline-block;
+      background-color : inherit;
+      border           : 0;
+      border-bottom    : dashed 1px rgb(0, 0, 0);
+      }
     }
+
   &__txt {
     display    : block;
-    width      : 100%;
     text-align : center;
+    width      : 100%;
     font-size  : 16px;
     }
   }
@@ -752,58 +759,6 @@ a:hover {
     }
   }
 
-@media (max-width : 430px) {
-  .page__title {
-    font-size : 25px;
-    }
-
-  .page__link {
-    font-size : 20px;
-    }
-
-  .page__list__item {
-    line-height : 20px;
-    }
-
-  .page__list__item__icon {
-    width : 16px;
-    }
-
-  }
-
-@media (max-width : 320px) {
-  .header {
-    height : 90px;
-    &__form {
-      font-size : 9px;
-      }
-    }
-
-  .article__txt {
-    font-size : 20px;
-    }
-
-  .form {
-    &__title {
-      display : inline;
-      }
-    &__row {
-      width   : 95%;
-      height  : 200px;
-      display : block;
-      margin  : 0 auto;
-      &__title--min {
-        width : 70%;
-        }
-      }
-    }
-
-  .footer__txt {
-    width   : 90%;
-    display : block;
-    }
-  }
-
 @media (max-width : 480px) {
 
   .form:not(form--last) {
@@ -857,7 +812,56 @@ a:hover {
     }
   }
 
+@media (max-width : 430px) {
+  .page__title {
+    font-size : 25px;
+    }
+
+  .page__link {
+    font-size : 20px;
+    }
+
+  .page__list__item {
+    line-height : 20px;
+    }
+
+  .page__list__item__icon {
+    width : 16px;
+    }
+
+  }
+
 @media (max-width : 320px) {
+  .header {
+    height : 90px;
+    &__form {
+      font-size : 9px;
+      }
+    }
+
+  .article__txt {
+    font-size : 20px;
+    }
+
+  .form {
+    &__title {
+      display : inline;
+      }
+    &__row {
+      width   : 95%;
+      height  : 200px;
+      display : block;
+      margin  : 0 auto;
+      &__title--min {
+        width : 70%;
+        }
+      }
+    }
+
+  .footer__txt {
+    width   : 90%;
+    display : block;
+    }
   }
 
 @media print {
