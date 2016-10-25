@@ -44,7 +44,7 @@ a:hover {
   opacity : 1;
   }
 
-.page {
+.page.page--home {
   position            : absolute;
   overflow            : hidden;
   width               : 100%;
@@ -115,9 +115,9 @@ a:hover {
       color       : #fff;
       display     : block;
       &__icon {
-        width    : 40px;
-        height   : auto;
         position : relative;
+        height   : auto;
+        width    : 40px;
         top      : 10px;
         right    : 20px;
         &--cell {
@@ -206,25 +206,21 @@ a:hover {
         line-height      : 33px;
         }
       &__name {
-        font-weight    : bold;
-        margin-right   : 10%;
-        position       : relative;
-        vertical-align : top;
-        font-size      : 23px;
-        line-height    : 32px;
+        font-weight : bold;
+        font-size   : 23px;
         }
       &__address {
-        display         : inline-block;
+        display         : inline;
         text-decoration : none;
-        position        : relative;
         color           : #000;
         font-size       : 23px;
         line-height     : 32px;
         }
       &__icon {
-        width    : 60px;
-        position : relative;
-        display  : inline-block;
+        width          : 60px;
+        position       : relative;
+        display        : inline-block;
+        vertical-align : top;
         }
       &__cell {
         position    : relative;
@@ -369,7 +365,8 @@ a:hover {
 .footer {
   margin : 0 auto 30px;
   &__sign {
-    margin : 0 0 30px 43%;
+    display : none;
+    margin  : 0 0 30px 43%;
     }
   &__txt {
     display    : block;
@@ -860,4 +857,8 @@ a:hover {
 @media (max-width : 320px) {
   }
 
-
+@media print {
+  .footer__sign {
+    display : block;
+    }
+  }
