@@ -42,7 +42,8 @@ $(function () {
 });
 
 // preloader script
-
+$('#f_page').removeClass('hide');
+$('#f_loader').addClass('hide');
 $('body').waitForImages(function () {
     $('#f_page').removeClass('hide');
     $('#f_loader').addClass('hide');
