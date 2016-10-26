@@ -14,6 +14,10 @@
 
   }
 
+.forPrint{
+  display : none;
+  }
+
 a:hover {
   text-decoration : underline;
   }
@@ -865,6 +869,9 @@ a:hover {
   }
 
 @media print {
+  .forPrint{
+    display : inline ;
+    }
   .footer__sign {
     display : block;
     }

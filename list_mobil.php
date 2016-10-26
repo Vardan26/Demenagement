@@ -1,20 +1,20 @@
 <?php
-$name = $_POST['name'];
-$email = $_POST['email'];
-$lName = $_POST['tel'];
-$massage = $_POST['message'];
-$subject = $_POST['subject'];
-$captcha = $_POST['g-recaptcha-response'];
+echo '<pre>';
+var_dump($_POST["input"][1]);
+echo '</pre>';
+
+
+//$captcha = $_POST['g-recaptcha-response'];
 
 $headers = "MIME-Version: 1.0\n";
 $headers .= "Content-type: text/html; charset=iso-8859-1\n";
-$headers .= "From: <".$email.">\n";
+$headers .= "From: <".">\n";
 $headers .= "X-Priority: 1\n";
 
 $from = $headers;
-$to = 'info@aviaglob.com';
+$to = 'gagik.sargsyan@gmail.com';
 
-$body = "From: $name\n E-Mail: $email\n Message:\n $massage tel:\n  $lName";
+$body = "From: ".$_POST["input"][1]."\n E-Mail: $email\n Message:\n $massage tel:\n  $lName";
 
 if ($captcha  !== '') {
     if (mail($to, $subject, $body, $from)) {
@@ -25,4 +25,3 @@ if ($captcha  !== '') {
 } else if ($_POST['submit'] && $captcha  !== '') {
     echo '<p>You answered the anti-spam question incorrectly!</p>';
 }
-?>
