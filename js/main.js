@@ -86,8 +86,9 @@
 
  function afterWebsiteLoaded(websiteDuration) {
      $('#player').css({
-         width: (($(window).innerWidth())) + 'px',
-         height: (($(window).innerWidth())*0.6625) + 'px'
+         width: (($(window).innerWidth())*1.1) + 'px',
+         height: (($(window).innerHeight())*1.2) + 'px',
+         left:((($(window).innerWidth())*1.1) / -12) + 'px'
      });
      if (!($('.playThis').length)) {
          stopVideo();
@@ -100,5 +101,9 @@
  }
 
  window.onresize = function () {
-     $('#player').css({ width: $(window).innerWidth() + 'px', height: (($(window).innerWidth())*0.6625) + 'px' });
+     $('#player').css({
+         width: (($(window).innerWidth())*1.5) + 'px',
+         height: (($(window).innerHeight())*1.2) + 'px',
+         left:((($(window).innerWidth())*1.5) / -8) + 'px'
+     });
  };

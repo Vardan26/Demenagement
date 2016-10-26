@@ -14,7 +14,7 @@
 
   }
 
-.forPrint{
+.forPrint {
   display : none;
   }
 
@@ -62,12 +62,13 @@ a:hover {
     }
 
   &__img--car {
-    width    : 50%;
     position : absolute;
+    display  : inline-block;
+    bottom   : 0;
+    height   : auto;
+    width    : 50%;
     left     : 0;
     margin   : 40px 0 0 30px;
-    height   : auto;
-    display  : inline-block;
     }
   &__title {
     top            : 0;
@@ -869,9 +870,10 @@ a:hover {
   }
 
 @media print {
-  .forPrint{
-    display : inline ;
+  .forPrint {
+    display : inline;
     }
+
   .footer__sign {
     display : block;
     }
