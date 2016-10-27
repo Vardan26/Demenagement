@@ -3,6 +3,10 @@ echo '<pre>';
 var_dump($_POST["input"][1]);
 echo '</pre>';
 
+$mailBody = $_POST["input"][0]
+
+
+
 
 //$captcha = $_POST['g-recaptcha-response'];
 
@@ -14,7 +18,7 @@ $headers .= "X-Priority: 1\n";
 $from = $headers;
 $to = 'gagik.sargsyan@gmail.com';
 
-$body = "From: ".$_POST["input"][1]."\n E-Mail: $email\n Message:\n $massage tel:\n  $lName";
+$body = "From: ".$_POST["input"][1]."\n E-Mail: ".$_POST["input"][1]."\n Message:\n ".$_POST["input"][1]." tel:\n  ".$_POST["input"][1];
 
 if ($captcha  !== '') {
     if (mail($to, $subject, $body, $from)) {
