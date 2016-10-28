@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="keywords" content="déménagement, déménageur, déménageurs, societe déménagement, déménagements, Joseph Déménagement, devis déménagement, demenagement france, demenagement international, demenagement bureaux, garde-meubles, stockage meuble,  demenagement, agences demenagement, demenagement professionnel, demenagement pour particuliers">
-    <meta name="description" content="Déménager avec Joseph Déménagement du déménagement, c’est être certain du professionnalisme de nos équipes et plus encore, de leur entrain à vous rendre votre déménagement agréable.">
+    <meta name="description" content="Déménager avec Joseph Déménagement déménagement, c’est être certain du professionnalisme de nos équipes et plus encore, de leur entrain à vous rendre votre déménagement agréable.">
     <meta name="subject" content="Joseph Déménagement est un service de déménagement">
     <meta name="abstract" content="Ce site internet présente la SARL Joseph Déménagement et organise la communication avec les clients.">
     <meta name="topic" content="Déménagement, transport">
@@ -28,6 +28,7 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <![endif]-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body class="body">
 <div class="loader" id="f_loader">
@@ -36,13 +37,13 @@
 <div class="page hide" id="f_page">
     <form class="form" action="list_mobil.php" method="post">
         <header class="header">
-            <img src="img/form_logo.jpg" class="header__logo">
+            <a href="index.html"><img src="img/form_logo.jpg" class="header__logo"></a>
             <div class="header__form">
                 <label class="header__form__label">Nom:</label>
                 <input name="input[]" value=""  placeholder="Nome Prenome" type="text" class="header__form__input"/>
-                <br/>
-                <label class="header__form__label">N° dossier:</label>
-                <input name="input[]" value=""  placeholder="" type="text" class="header__form__input"/>
+                <!--<br/>-->
+                <!--<label class="header__form__label hidden">N° dossier:</label>-->
+                <!--<input name="input[]" value=""  placeholder="" type="text" class="header__form__input hidden"/>-->
             </div>
         </header>
 
@@ -56,7 +57,7 @@
                 </p>
                 <p>
                     Parce que chacun de nos clients est unique,
-                    votre conseiller Joseph Déménagement du déménagement souhaite,
+                    votre conseiller Joseph Déménagement déménagement souhaite,
                     afin de mieux visualiser votre déménagement,
                     étudier la liste de votre mobilier à déménager.
                 </p>
@@ -198,7 +199,7 @@
             <label for="row123" class="form__txt form__row__label form__row__label--4">3 portes</label>
             <input name="input[]" value=""  placeholder="Num" type="text" min="0" max="99" maxlength="2" id="row124" class="form__row__check"/>
             <label for="row124" class="form__txt form__row__label form__row__label--5">4 portes</label>
-            <input name="input[]" value=""  placeholder="Num" type="checkbox" id="row125" class="form__row__check--min"/>
+            <input name="input[]" value="- de Marbre"  placeholder="Num" type="checkbox" id="row125" class="form__row__check--min"/>
             <label for="row125" class="form__txt form__row__label form__row__label--min">Marbre</label>
         </fieldset>
         <fieldset class="form__row">
@@ -209,7 +210,7 @@
             <label for="row132" class="form__txt form__row__label form__row__label--3">2 portes</label>
             <input name="input[]" value=""  placeholder="Num" type="text" min="0" max="99" maxlength="2" id="row133" class="form__row__check"/>
             <label for="row133" class="form__txt form__row__label form__row__label--4">4 portes</label>
-            <input name="input[]" value=""  placeholder="Num" type="checkbox" id="row134" class="form__row__check--min"/>
+            <input name="input[]" value="- de Marbre"  placeholder="Num" type="checkbox" id="row134" class="form__row__check--min"/>
             <label for="row134" class="form__txt form__row__label form__row__label--min">Marbre</label>
         </fieldset>
         <fieldset class="form__row form__row--color">
@@ -233,8 +234,8 @@
             <label for="row153" class="form__txt form__row__label form__row__label--4">BZ</label>
             <input name="input[]" value=""  placeholder="Num" type="text" min="0" max="99" maxlength="2" id="row154" class="form__row__check"/>
             <label for="row154" class="form__txt form__row__label form__row__label--5">Clic clac</label>
-            <input name="input[]" value=""  placeholder="Num" type="checkbox" id="row155" class="form__row__check--min"/>
-            <label for="row155" class="form__txt form__row__label form__row__label--min">Culr</label>
+            <input name="input[]" value="Cuir"  placeholder="Num" type="checkbox" id="row155" class="form__row__check--min"/>
+            <label for="row155" class="form__txt form__row__label form__row__label--min">Cuir</label>
         </fieldset>
         <fieldset class="form__row form__row--color">
             <label class="form__txt form__row__label form__row__label--1">Billot de cuisine</label>
@@ -574,19 +575,26 @@
             <input name="input[]" value=""  placeholder="Num" id="row474" type="text" class="form__row__dash form__row--lg__dash form__row__dash--sm">
             <div>
                 <label class="form__txt form__row__label form__row__label--1 form__row--lg__label--1"></label>
-                <label class="form__txt form__row__label form__row--lg__label form__row__label--min form__row--lg__label--min">Cadre :</label>
-                <input name="input[]" value=""  placeholder="Num" id="row475" type="checkbox" class="form__row__check form__row__check--min form__row--lg__check--min">
+                <span class="form__txt form__row__label form__row--lg__label form__row__label--min form__row--lg__label--min">Cadre :</span>
+
+                <input name="input[]" value="- de Bois"  placeholder="Num" id="row475" type="checkbox" class="form__row__check form__row__check--min form__row--lg__check--min">
                 <label for="row475" class="form__txt form__row__label form__row--lg__label form__row__label--min form__row--lg__label--min">Bois</label>
-                <input name="input[]" value=""  placeholder="Num" id="row476" type="checkbox" class="form__row__check form__row__check--min form__row--lg__check--min">
+
+                <input name="input[]" value="- de Fonte"  placeholder="Num" id="row476" type="checkbox" class="form__row__check form__row__check--min form__row--lg__check--min">
                 <label for="row476" class="form__txt form__row__label form__row--lg__label form__row__label--min form__row--lg__label--min">Fonte</label>
-                <input name="input[]" value=""  placeholder="Num" id="row477" type="checkbox" class="form__row__check form__row__check--min form__row--lg__check--min">
+
+                <input name="input[]" value="- Métallique"  placeholder="Num" id="row477" type="checkbox" class="form__row__check form__row__check--min form__row--lg__check--min">
                 <label for="row477" class="form__txt form__row__label form__row--lg__label form__row__label--min form__row--lg__label--min">Métallique</label>
-                <label class="form__txt form__row__label form__row--lg__label form__row__label--min form__row--lg__label--min">Structure :</label>
-                <input name="input[]" value=""  placeholder="Num" id="row478" type="checkbox" class="form__row__check form__row__check--min form__row--lg__check--min">
+
+                <span class="form__txt form__row__label form__row--lg__label form__row__label--min form__row--lg__label--min">Structure :</span>
+
+                <input name="input[]" value="- de bois"  placeholder="Num" id="row478" type="checkbox" class="form__row__check form__row__check--min form__row--lg__check--min">
                 <label for="row478" class="form__txt form__row__label form__row--lg__label form__row__label--min form__row--lg__label--min">Bois</label>
-                <input name="input[]" value=""  placeholder="Num" id="row479" type="checkbox" class="form__row__check form__row__check--min form__row--lg__check--min">
+
+                <input name="input[]" value="- Laqué"  placeholder="Num" id="row479" type="checkbox" class="form__row__check form__row__check--min form__row--lg__check--min">
                 <label for="row479" class="form__txt form__row__label form__row--lg__label form__row__label--min form__row--lg__label--min">Laqué</label>
-                <input name="input[]" value=""  placeholder="Num" id="row4710" type="checkbox" class="form__row__check form__row__check--min form__row--lg__check--min">
+
+                <input name="input[]" value="- Vernis "  placeholder="Num" id="row4710" type="checkbox" class="form__row__check form__row__check--min form__row--lg__check--min">
                 <label for="row4710" class="form__txt form__row__label  form__row--lg__label form__row__label--min form__row--lg__label--min">Vernis</label>
             </div>
         </fieldset>
@@ -661,7 +669,7 @@
         <fieldset class="form__row form__row--color">
             <label class="form__txt form__row__label form__row__label--1"> Semainier, Chiffonnier </label>
             <input name="input[]" value=""  placeholder="Num" type="text" min="0" max="99" maxlength="2" id="" class="form__row__check"/>
-            <input name="input[]" value=""  placeholder="Num" type="checkbox" id="row551" class="form__row__check--min"/>
+            <input name="input[]" value="- Dessus marbre"  placeholder="Num" type="checkbox" id="row551" class="form__row__check--min"/>
             <label for="row551" class="form__txt form__row__label form__row__label--2">Dessus marbre</label>
         </fieldset>
         <fieldset class="form__row">
@@ -943,21 +951,22 @@
             <label class="form__txt form__row__label form__row__label--1"><strong>Votre mobilier est constitué de :</strong></label>
         </fieldset>
         <fieldset class="form__row">
-            <input name="input[]" value=""  placeholder="Num" type="checkbox" id="row831" class="form__row__check--min"/>
+            <input name="input[]" value=" - Meubles en bois massif"  placeholder="Num" type="checkbox" id="row831" class="form__row__check--min"/>
             <label for="row831" class="form__txt form__row__label form__row__label--1"> Meubles en bois massif </label>
-            <input name="input[]" value=""  placeholder="Num" type="checkbox" id="row832" class="form__row__check--min"/>
+            <input name="input[]" value=" - Meubles anciens Haute Epoque ou Renaissance"  placeholder="Num" type="checkbox" id="row832" class="form__row__check--min"/>
             <label for="row832" class="form__txt form__row__labe"> Meubles anciens Haute Epoque ou Renaissance </label>
         </fieldset>
         <fieldset class="form__row">
-            <input name="input[]" value=""  placeholder="Num" type="checkbox" id="row841" class="form__row__check--min"/>
+            <input name="input[]" value=" - Meubles contemporains"  placeholder="Num" type="checkbox" id="row841" class="form__row__check--min"/>
             <label for="row841" class="form__txt form__row__label form__row__label--1">Meubles contemporains</label>
-            <input name="input[]" value=""  placeholder="Num" type="checkbox" id="row842" class="form__row__check--min"/>
+            <input name="input[]" value=" - Meubles anciens Louis …., Régence, Empire ou Napoléon"  placeholder="Num" type="checkbox" id="row842" class="form__row__check--min"/>
             <label for="row842" class="form__txt form__row__labe">Meubles anciens Louis …., Régence, Empire ou Napoléon</label>
         </fieldset>
         <fieldset class="form__row">
-            <input name="input[]" value=""  placeholder="Num" type="checkbox" id="row851" class="form__row__check--min"/>
+            <input name="input[]" value=" - Meubles Art Déco"  placeholder="Num" type="checkbox" id="row851" class="form__row__check--min"/>
             <label for="row851" class="form__txt form__row__label form__row__label--1">Meubles Art Déco</label>
-            <input name="input[]" value=""  placeholder="Num" type="checkbox" id="row852" class="form__row__check--min"/>
+
+            <input name="input[]" value="- Autre :"  placeholder="Num" type="checkbox" id="row852" class="form__row__check--min"/>
             <label for="row852" class="form__txt">Autre :</label>
             <input name="input[]" value=""  placeholder="Num" type="text" class="form__row__dash form__row__dash--lg"/>
         </fieldset>
@@ -973,15 +982,16 @@
             <label class="form__txt "><strong>Avez-vous listé l'ensemble des éléments présents dans votre garage, cave, grenier et dépendances ?</strong></label>
         </fieldset>
         <fieldset class="form__row" style="padding-bottom: 50px; border: none; border-bottom: 1px solid #000">
-            <input name="input[]" value=""  placeholder="Num" type="checkbox" id="row871" class="form__row__check--min"/>
+            <input name="input[]" value=" - Oui"  placeholder="Num" type="checkbox" id="row871" class="form__row__check--min"/>
             <label for="row871" class="form__txt">Oui</label>
-            <input name="input[]" value=""  placeholder="Num" type="checkbox" id="row872" class="form__row__check--min"/>
+            <input name="input[]" value=" - Non"  placeholder="Num" type="checkbox" id="row872" class="form__row__check--min"/>
             <label for="row872" class="form__txt">Non</label>
             <label class="form__txt"> Si non, merci de nous les indiquer dans la rubrique ci-dessous ''Vos observations'' </label>
         </fieldset>
         <h4 class="form__row__title--min" style="display:inline-block; margin-top: 50px">Vos observations</h4>
         <label class="form__txt ">(Objets lourds, fragiles, service à vaisselle, …)</label>
         <textarea name="textArea" class="form__textarea"></textarea>
+        <div class="g-recaptcha" data-sitekey="6LcsaQoUAAAAAGNXfpMwd1YuCbG1Q5330J4J6XbP"></div>
         <button type="submit">submit</button>
     </form>
     <div class="footer">
