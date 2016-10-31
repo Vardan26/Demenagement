@@ -989,7 +989,6 @@ if (!(empty($_POST["input_292"]))) {
     $mailBody .= '<strong> Les observations du client: &emsp;</strong>' . $_POST["input_292"] . "<br/>";
 }
 
-$_POST['g-recaptcha-response'] = "captcha";
 $captcha = $_POST['g-recaptcha-response'];
 $subject = "-- List Mobilier --" . $_POST["input_0"];
 
