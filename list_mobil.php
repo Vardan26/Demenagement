@@ -1,7 +1,7 @@
 <?php
 
 $mailBody = '<h2><strong>Nome Prenome : &emsp;</strong>' . $_POST["input_0"] . "</h2>";
-$mailBody = '<h2><strong>Email : &emsp;</strong>' . $_POST["input_00"] . "</h2>";
+$mailBody .= '<h2><strong>Email : &emsp;</strong>' . $_POST["input_00"] . "</h2>";
 
 if (!(empty($_POST["input_1"]))) {
     $mailBody .= '<hr/><h2> Appareil de musculation: </h2>';
