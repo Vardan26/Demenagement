@@ -758,232 +758,235 @@ if (!(empty($_POST["input_222"]))) {
 }
 if (!(empty($_POST["input_223"]))) {
     $mailBody .= '<hr/><h2> Trumeau (Miroir) : </h2>';
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_223"] . "<br/>";
+    $mailBody .= '<strong> Trumeau (Miroir): &emsp;</strong>' . $_POST["input_223"] . "<br/>";
 }
 if (!(empty($_POST["input_224"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_224"] . "<br/>";
+    $mailBody .= '<strong> Dimensions : &emsp;</strong>' . $_POST["input_224"] . "<br/>";
 }
 if (!(empty($_POST["input_225"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_225"] . "<br/>";
+    $mailBody .= '<hr/><h2> Vaisselier : </h2>';
+    $mailBody .= '<strong> 1 porte  : &emsp;</strong>' . $_POST["input_225"] . "<br/>";
 }
 if (!(empty($_POST["input_226"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_226"] . "<br/>";
+    $mailBody .= '<strong> 2 porte  : &emsp;</strong>' . $_POST["input_226"] . "<br/>";
 }
 if (!(empty($_POST["input_227"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_227"] . "<br/>";
+    $mailBody .= '<strong> 3 porte  : &emsp;</strong>' . $_POST["input_227"] . "<br/>";
 }
 if (!(empty($_POST["input_228"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_228"] . "<br/>";
+    $mailBody .= '<strong> 4 porte  : &emsp;</strong>' . $_POST["input_228"] . "<br/>";
 }
 if (!(empty($_POST["input_229"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_229"] . "<br/>";
+    $mailBody .= '<hr/><h2> Valet de chambre : </h2>';
+    $mailBody .= '<strong> Valet de chambre  : &emsp;</strong>' . $_POST["input_229"] . "<br/>";
 }
 if (!(empty($_POST["input_230"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_230"] . "<br/>";
+    $mailBody .= '<hr/><h2> Vélo : </h2>';
+    $mailBody .= '<strong>  Adulte : &emsp;</strong>' . $_POST["input_230"] . "<br/>";
 }
 if (!(empty($_POST["input_231"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_231"] . "<br/>";
+    $mailBody .= '<strong>Enfant  : &emsp;</strong>' . $_POST["input_231"] . "<br/>";
 }
+$mailBody .= '<hr/><hr/><h1> Contenu Des Placards Et / Ou Des Meubles Non Déménagés  </h1>';
 if (!(empty($_POST["input_232"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_232"] . "<br/>";
+
+    $mailBody .= '<h2> Placards intégrés : </h2>';
+    $mailBody .= '<h3> Couloir, Chambres, WC , SDB, … : </h3>';
+    $mailBody .= '<strong> 1 porte : &emsp;</strong>' . $_POST["input_232"] . "<br/>";
 }
 if (!(empty($_POST["input_233"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_233"] . "<br/>";
+    $mailBody .= '<strong> 2 porte : &emsp;</strong>' . $_POST["input_233"] . "<br/>";
 }
 if (!(empty($_POST["input_234"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_234"] . "<br/>";
+    $mailBody .= '<strong> 3 porte : &emsp;</strong>' . $_POST["input_234"] . "<br/>";
 }
 if (!(empty($_POST["input_235"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_235"] . "<br/>";
+    $mailBody .= '<strong> 4 porte : &emsp;</strong>' . $_POST["input_235"] . "<br/>";
 }
 if (!(empty($_POST["input_236"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_236"] . "<br/>";
+    $mailBody .= '<hr/><h2> Eléments de cuisine: </h2>';
+    $mailBody .= '<h3> Elément haut ou bas: </h3>';
+
+    $mailBody .= '<strong> 1 porte : &emsp;</strong>' . $_POST["input_236"] . "<br/>";
 }
 if (!(empty($_POST["input_237"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_237"] . "<br/>";
+    $mailBody .= '<strong> 2 porte : &emsp;</strong>' . $_POST["input_237"] . "<br/>";
 }
 if (!(empty($_POST["input_238"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_238"] . "<br/>";
+    $mailBody .= '<strong> 3 porte : &emsp;</strong>' . $_POST["input_238"] . "<br/>";
 }
 if (!(empty($_POST["input_239"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_239"] . "<br/>";
+    $mailBody .= '<strong> 4 porte : &emsp;</strong>' . $_POST["input_239"] . "<br/>";
 }
 if (!(empty($_POST["input_240"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_240"] . "<br/>";
+    $mailBody .= '<h3> Elément colonne : </h3>';
+    $mailBody .= '<strong> 1 porte : &emsp;</strong>' . $_POST["input_240"] . "<br/>";
 }
 if (!(empty($_POST["input_241"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_241"] . "<br/>";
+    $mailBody .= '<strong> 2 porte : &emsp;</strong>' . $_POST["input_241"] . "<br/>";
 }
 if (!(empty($_POST["input_242"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_242"] . "<br/>";
+    $mailBody .= '<strong> 3 porte : &emsp;</strong>' . $_POST["input_242"] . "<br/>";
 }
 if (!(empty($_POST["input_243"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_243"] . "<br/>";
+    $mailBody .= '<strong> 4 porte : &emsp;</strong>' . $_POST["input_243"] . "<br/>";
 }
 if (!(empty($_POST["input_244"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_244"] . "<br/>";
+    $mailBody .= '<hr/><h2> Eléments de salle de bain: </h2>';
+    $mailBody .= '<h3> Elément haut ou bas: </h3>';
+    $mailBody .= '<strong> 1 porte : &emsp;</strong>' . $_POST["input_244"] . "<br/>";
 }
 if (!(empty($_POST["input_245"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_245"] . "<br/>";
+    $mailBody .= '<strong> 2 porte : &emsp;</strong>' . $_POST["input_245"] . "<br/>";
 }
 if (!(empty($_POST["input_246"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_246"] . "<br/>";
+    $mailBody .= '<strong> 3 porte : &emsp;</strong>' . $_POST["input_246"] . "<br/>";
 }
 if (!(empty($_POST["input_247"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_247"] . "<br/>";
+    $mailBody .= '<strong> 4 porte : &emsp;</strong>' . $_POST["input_247"] . "<br/>";
 }
 if (!(empty($_POST["input_248"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_248"] . "<br/>";
+    $mailBody .= '<h3> Elément colonne: </h3>';
+    $mailBody .= '<strong> 1 porte  : &emsp;</strong>' . $_POST["input_248"] . "<br/>";
 }
 if (!(empty($_POST["input_249"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_249"] . "<br/>";
+    $mailBody .= '<strong> 2 porte : &emsp;</strong>' . $_POST["input_249"] . "<br/>";
 }
 if (!(empty($_POST["input_250"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_250"] . "<br/>";
+    $mailBody .= '<strong> 3 porte : &emsp;</strong>' . $_POST["input_250"] . "<br/>";
 }
 if (!(empty($_POST["input_251"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_251"] . "<br/>";
+    $mailBody .= '<strong> 4 porte  : &emsp;</strong>' . $_POST["input_251"] . "<br/>";
 }
 if (!(empty($_POST["input_252"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_252"] . "<br/>";
+    $mailBody .= '<h3> Elément sous lavabo: </h3>';
+    $mailBody .= '<strong> 1 porte : &emsp;</strong>' . $_POST["input_252"] . "<br/>";
 }
 if (!(empty($_POST["input_253"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_253"] . "<br/>";
+    $mailBody .= '<strong> 2 porte : &emsp;</strong>' . $_POST["input_253"] . "<br/>";
 }
 if (!(empty($_POST["input_254"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_254"] . "<br/>";
+    $mailBody .= '<hr/><h2> Rayonnages: </h2>';
+    $mailBody .= '<h3> Arrière-cuisine, Garage, Atelier… : </h3>';
+    $mailBody .= '<strong> m Hauteur X : &emsp;</strong>' . $_POST["input_254"] . "<br/>";
 }
 if (!(empty($_POST["input_255"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_255"] . "<br/>";
+    $mailBody .= '<strong> m Longueur : &emsp;</strong>' . $_POST["input_255"] . "<br/>";
 }
+$mailBody .= '<hr/><hr/><h1> Objets Volumineux </h1>';
 if (!(empty($_POST["input_256"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_256"] . "<br/>";
+    $mailBody .= '<strong> Baby-foot : &emsp;</strong>' . $_POST["input_256"] . "<br/>";
 }
 if (!(empty($_POST["input_257"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_257"] . "<br/>";
+    $mailBody .= '<strong> Coffre-fort Poids : &emsp;</strong>' . $_POST["input_257"] . "<br/>";
 }
 if (!(empty($_POST["input_258"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_258"] . "<br/>";
+    $mailBody .= '<strong> Number  : &emsp;</strong>' . $_POST["input_258"] . "<br/>";
 }
 if (!(empty($_POST["input_259"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_259"] . "<br/>";
+    $mailBody .= '<strong> Planche à voile : &emsp;</strong>' . $_POST["input_259"] . "<br/>";
 }
 if (!(empty($_POST["input_260"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_260"] . "<br/>";
+    $mailBody .= '<strong> Balançoire / Balancelle : &emsp;</strong>' . $_POST["input_260"] . "<br/>";
 }
 if (!(empty($_POST["input_261"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_261"] . "<br/>";
+    $mailBody .= '<strong> Compresseur domestique  : &emsp;</strong>' . $_POST["input_261"] . "<br/>";
 }
 if (!(empty($_POST["input_262"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_262"] . "<br/>";
+    $mailBody .= '<strong> Quad : &emsp;</strong>' . $_POST["input_262"] . "<br/>";
 }
 if (!(empty($_POST["input_263"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_263"] . "<br/>";
+    $mailBody .= '<strong> Cylindrée : &emsp;</strong>' . $_POST["input_263"] . "<br/>";
 }
 if (!(empty($_POST["input_264"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_264"] . "<br/>";
+    $mailBody .= '<strong> Bétonnière  : &emsp;</strong>' . $_POST["input_264"] . "<br/>";
 }
 if (!(empty($_POST["input_265"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_265"] . "<br/>";
+    $mailBody .= '<strong> Machine à bois : &emsp;</strong>' . $_POST["input_265"] . "<br/>";
 }
 if (!(empty($_POST["input_266"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_266"] . "<br/>";
+    $mailBody .= '<strong> Remorque : &emsp;</strong>' . $_POST["input_266"] . " : ";
 }
 if (!(empty($_POST["input_267"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_267"] . "<br/>";
+    $mailBody .= '<strong> Dimension : &emsp;</strong>' . $_POST["input_267"] . "<br/>";
 }
 if (!(empty($_POST["input_268"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_268"] . "<br/>";
+    $mailBody .= '<strong> Billard  : &emsp;</strong>' . $_POST["input_268"] . "<br/>";
 }
 if (!(empty($_POST["input_269"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_269"] . "<br/>";
+    $mailBody .= '<strong> Motoculteur : &emsp;</strong>' . $_POST["input_269"] . "<br/>";
 }
 if (!(empty($_POST["input_270"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_270"] . "<br/>";
+    $mailBody .= '<strong> Table de ping-pong : &emsp;</strong>' . $_POST["input_270"] . "<br/>";
 }
 if (!(empty($_POST["input_271"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_271"] . "<br/>";
+    $mailBody .= '<strong> Brouette : &emsp;</strong>' . $_POST["input_271"] . "<br/>";
 }
 if (!(empty($_POST["input_272"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_272"] . "<br/>";
+    $mailBody .= '<strong> Nettoyeur haute pression : &emsp;</strong>' . $_POST["input_272"] . "<br/>";
 }
 if (!(empty($_POST["input_273"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_273"] . "<br/>";
+    $mailBody .= '<strong> Toboggan : &emsp;</strong>' . $_POST["input_273"] . " : ";
 }
 if (!(empty($_POST["input_274"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_274"] . "<br/>";
+    $mailBody .= '<strong> Dimension : &emsp;</strong>' . $_POST["input_274"] . "<br/>";
 }
 if (!(empty($_POST["input_275"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_275"] . "<br/>";
+    $mailBody .= '<strong> Climatiseur : &emsp;</strong>' . $_POST["input_275"] . "<br/>";
 }
 if (!(empty($_POST["input_276"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_276"] . "<br/>";
+    $mailBody .= '<strong> Niche à chien : &emsp;</strong>' . $_POST["input_276"] . "<br/>";
 }
 if (!(empty($_POST["input_277"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_277"] . "<br/>";
+    $mailBody .= '<strong> Tonnelle : &emsp;</strong>' . $_POST["input_277"] . " : ";
 }
 if (!(empty($_POST["input_278"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_278"] . "<br/>";
+    $mailBody .= '<strong> Dimension : &emsp;</strong>' . $_POST["input_278"] . "<br/>";
 }
 if (!(empty($_POST["input_279"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_279"] . "<br/>";
+    $mailBody .= '<strong> Cartons stockés : &emsp;</strong>' . $_POST["input_279"] . "<br/>";
 }
-
 if (!(empty($_POST["input_280"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_280"] . "<br/>";
+    $mailBody .= '<strong> Parabole : &emsp;</strong>' . $_POST["input_280"] . "<br/>";
 }
-
 if (!(empty($_POST["input_281"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_281"] . "<br/>";
+    $mailBody .= '<strong> Volière : &emsp;</strong>' . $_POST["input_281"] . " : ";
 }
-
 if (!(empty($_POST["input_282"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_282"] . "<br/>";
+    $mailBody .= '<strong> Dimension : &emsp;</strong>' . $_POST["input_282"] . "<br/>";
 }
-
+$mailBody .= '<hr/><hr/><h1> Précisions </h1>';
 if (!(empty($_POST["input_283"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_283"] . "<br/>";
+    $mailBody .= '<h2> Votre mobilier est constitué de : </h2>';
+    $mailBody .= '<strong>Meubles en bois massif  : &emsp;</strong>' . $_POST["input_283"] . "<br/>";
 }
-
 if (!(empty($_POST["input_284"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_284"] . "<br/>";
+    $mailBody .= '<strong>Meubles anciens Haute Epoque ou Renaissance: &emsp;</strong>' . $_POST["input_284"] . "<br/>";
 }
-
 if (!(empty($_POST["input_285"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_285"] . "<br/>";
+    $mailBody .= '<strong> Meubles contemporains  : &emsp;</strong>' . $_POST["input_285"] . "<br/>";
 }
-
 if (!(empty($_POST["input_286"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_286"] . "<br/>";
+    $mailBody .= '<strong> Meubles anciens Louis …., Régence, Empire ou Napoléon : &emsp;</strong>' . $_POST["input_286"] . "<br/>";
 }
-
 if (!(empty($_POST["input_287"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_287"] . "<br/>";
+    $mailBody .= '<strong> Meubles Art Déco : &emsp;</strong>' . $_POST["input_287"] . "<br/>";
 }
-
 if (!(empty($_POST["input_288"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_288"] . "<br/>";
+    $mailBody .= '<strong> Autre  : &emsp;</strong>' . $_POST["input_288"] . " : ";
 }
-
 if (!(empty($_POST["input_289"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_289"] . "<br/>";
+    $mailBody .= '<strong> Notes : &emsp;</strong>' . $_POST["input_289"] . "<br/>";
 }
-
 if (!(empty($_POST["input_290"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_290"] . "<br/>";
+    $mailBody .= '<strong>Comment qualifiez-vous votre aménagement intérieur ?: &emsp;</strong>' . $_POST["input_290"] . "/10 <br/>";
 }
-
 if (!(empty($_POST["input_291"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_291"] . "<br/>";
+    $mailBody .= '<strong> Avez-vous listé l\'ensemble des éléments présents dans votre garage, cave, grenier et dépendances ? : &emsp;</strong>' . $_POST["input_291"] . "<br/>";
 }
-
 if (!(empty($_POST["input_292"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_292"] . "<br/>";
+    $mailBody .= '<strong> Les observations du client: &emsp;</strong>' . $_POST["input_292"] . "<br/>";
 }
-if (!(empty($_POST["input_293"]))) {
-    $mailBody .= '<strong>Nome Prenome  : &emsp;</strong>' . $_POST["input_293"] . "<br/>";
-}
-
 
 $_POST['g-recaptcha-response'] = "captcha";
 $captcha = $_POST['g-recaptcha-response'];
@@ -994,11 +997,8 @@ $headers .= "Content-type: text/html; charset=iso-8859-1\n";
 $headers .= "From: <" . ">\n";
 $headers .= "X-Priority: 1\n";
 
-print_r($mailBody);
-//print_r(array_filter($_POST["input"]));
-
 $from = $headers;
-$to = 'gagik.sargsyan@gmail.com';
+$to = 'info@ogneci.com';
 
 $body = "From: " . $_POST["input_1"] . "\n E-Mail: " . $_POST["input_1"] . "\n Message:\n " . $_POST["input_1"] . " tel:\n  " . $_POST["input_1"];
 
