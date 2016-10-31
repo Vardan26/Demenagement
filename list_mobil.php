@@ -1011,6 +1011,6 @@ if ($captcha !== '') {
     } else {
         echo '<p>Something went wrong, go back and try again!</p>';
     }
-} else if ($_POST['submit'] && $captcha !== '') {
+} else {
     echo '<p>You answered the anti-spam question incorrectly!</p>';
 }
