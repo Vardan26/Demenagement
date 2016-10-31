@@ -24,6 +24,8 @@ window.addEventListener('load', function () {
 }, false);
 
 
+
+
 // 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
 
@@ -108,3 +110,7 @@ window.onresize = function () {
         left: ((($(window).innerWidth()) * 1.5) / -8) + 'px'
     });
 };
+
+$('#f_errors__close').on('click', function () {
+    $('#f_errors').removeClass('show');
+});

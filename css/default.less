@@ -186,6 +186,30 @@ button:focus {
     }
 
 
+.closeBtn {
+    position         : absolute;
+    background-color : transparent;
+    cursor           : pointer;
+    top              : 10px;
+    right            : 10px;
+    height           : 40px;
+    width            : 40px;
+    .transition(transform 500ms ease);
+    &:before,
+    &:after {
+        content          : '';
+        position         : absolute;
+        display          : block;
+        right            : 20px;
+        height           : 35px;
+        width            : 3px;
+        background-color : #000;
+        .border-radius(3px);
+        .transform(rotate(45deg));
+        }
+    &:after { .transform(rotate(-45deg)); }
+    }
+
 .addToolTip {
     border-bottom   : 1px solid #bbb;
     color           : #666;

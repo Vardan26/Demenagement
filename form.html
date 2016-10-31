@@ -41,9 +41,9 @@
             <div class="header__form">
                 <label class="header__form__label">Nom:</label>
                 <input name="input_0" value=""  placeholder="Nome Prenome" type="text" class="header__form__input"/>
-                <!--<br/>-->
-                <!--<label class="header__form__label hidden">N° dossier:</label>-->
-                <!--<input name="input_']" lue=""  placeholder="" type="text" class="header__form__input hidden"/>-->
+                <br/>
+                <label class="header__form__label">Votre email:</label>
+                <input name="input_00" value=""  placeholder="Email" type="email" class="header__form__input"/>
             </div>
         </header>
         <article class="article">
@@ -985,12 +985,16 @@
 
             <span>(<strong>Si non</strong>, merci de nous les indiquer dans la rubrique ci-dessous ''Vos observations'')</span>
         </fieldset>
-        <h4 class="form__line__title--min" style="display:inline-block; margin-top: 50px">Vos observations</h4>
+        <h4 class="form__line__title--min" style="display:inline-block; margin-top: 50px"><label for="row873">Vos observations</label></h4>
         <label>(Objets lourds, fragiles, service à vaisselle, …)</label>
-        <textarea name="input_292" class="form__textarea"></textarea>
+        <textarea name="input_292" class="form__textarea" id="row873"></textarea>
         <div class="g-recaptcha" data-sitekey="6LcsaQoUAAAAAGNXfpMwd1YuCbG1Q5330J4J6XbP"></div>
         <button type="submit" class="form__submit">Send list mobilier <span class="form__submit__icon"></span></button>
     </form>
+    <ul id="f_errors" class="errors">
+        <li class="closeBtn" id="f_errors__close"></li>
+
+    </ul>
     <div class="footer">
         <div class="footer__sign">
             <span class="footer__sign__txt">Signature :</span>

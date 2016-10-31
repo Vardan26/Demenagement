@@ -1,6 +1,7 @@
 <?php
 
 $mailBody = '<h2><strong>Nome Prenome : &emsp;</strong>' . $_POST["input_0"] . "</h2>";
+$mailBody = '<h2><strong>Email : &emsp;</strong>' . $_POST["input_00"] . "</h2>";
 
 if (!(empty($_POST["input_1"]))) {
     $mailBody .= '<hr/><h2> Appareil de musculation: </h2>';
@@ -994,7 +995,7 @@ $subject = "List Mobilier";
 
 $headers = "MIME-Version: 1.0\n";
 $headers .= "Content-type: text/html; charset=iso-8859-1\n";
-$headers .= "From: <" . ">\n";
+$headers .= "From: <" .$_POST["input_00"]. ">\n";
 $headers .= "X-Priority: 1\n";
 
 $from = $headers;
