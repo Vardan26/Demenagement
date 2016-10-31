@@ -1002,7 +1002,7 @@ $headers .= "X-Priority: 1\n";
 
 $from = $headers;
 $to = 'info@ogneci.com';
-
+var_dump($_POST);
 $body = "From: " . $_POST["input_0"] . "\n E-Mail: " . $_POST["input_00"] . "\n Message:\n " . $mailBody . " tel:\n  " . $_POST["input_1"];
 
 if ($captcha !== '') {
