@@ -991,11 +991,14 @@ if (!(empty($_POST["input_292"]))) {
 
 $_POST['g-recaptcha-response'] = "captcha";
 $captcha = $_POST['g-recaptcha-response'];
-$subject = "-- List Mobilier --". $_POST["input_0"];
+$subject = "-- List Mobilier --" . $_POST["input_0"];
 
-$headers = "MIME-Version: 1.0\n";
-$headers .= "Content-type: text/html; charset=iso-8859-1\n";
-$headers .= "From: <" .$_POST["input_00"]. ">\n";
+
+$headers = 'From: '. $_POST["input_00"] ." ". $_POST["input_00"] . "\r\n";
+$headers .= 'Reply-To: ' . $_POST["input_00"] . "\r\n";
+$headers .= 'X-Mailer: PHP/' . phpversion();
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
 $headers .= "X-Priority: 1\n";
 
 $from = $headers;
