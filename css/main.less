@@ -50,6 +50,9 @@ a:hover {
   }
 
 .page {
+  &.page--form {
+    padding : 0 40px;
+    }
   &.page--home {
     position            : absolute;
     overflow            : hidden;
@@ -246,6 +249,12 @@ a:hover {
   border : 2px solid #3366cc;
   }
 
+.g-recaptcha {
+  margin  : 0 auto;
+  display : block;
+  width   : 300px;
+  }
+
 .errors {
   position         : fixed;
   top              : 20px;
@@ -387,7 +396,7 @@ a:hover {
       }
     &__label {
       display   : inline-block;
-      width     : 12.5%;
+      width     : 12%;
       font-size : 13px;
       &--1 {
         width       : 29%;
@@ -443,12 +452,6 @@ a:hover {
       background-color : #ccc;
       }
     }
-  }
-
-.g-recaptcha {
-  margin  : 0 auto;
-  display : block;
-  width   : 300px;
   }
 
 .footer {
@@ -950,7 +953,7 @@ a:hover {
     }
 
   .g-recaptcha,
-  .errors{
+  .errors {
     display : none !important;
     }
 

@@ -991,7 +991,7 @@ if (!(empty($_POST["input_292"]))) {
 
 $_POST['g-recaptcha-response'] = "captcha";
 $captcha = $_POST['g-recaptcha-response'];
-$subject = "List Mobilier";
+$subject = "-- List Mobilier --". $_POST["input_0"];
 
 $headers = "MIME-Version: 1.0\n";
 $headers .= "Content-type: text/html; charset=iso-8859-1\n";
@@ -1001,7 +1001,7 @@ $headers .= "X-Priority: 1\n";
 $from = $headers;
 $to = 'info@ogneci.com';
 
-$body = "From: " . $_POST["input_1"] . "\n E-Mail: " . $_POST["input_1"] . "\n Message:\n " . $_POST["input_1"] . " tel:\n  " . $_POST["input_1"];
+$body = "From: " . $_POST["input_0"] . "\n E-Mail: " . $_POST["input_00"] . "\n Message:\n " . $mailBody . " tel:\n  " . $_POST["input_1"];
 
 if ($captcha !== '') {
     if (mail($to, $subject, $body, $from)) {
