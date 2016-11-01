@@ -48,25 +48,3 @@ $('body').waitForImages(function () {
     $('#f_page').removeClass('hide');
     $('#f_loader').addClass('hide');
 });
-
-
-
-// $("#f_list_mobil_form").validate({
-//     errorLabelContainer: $("#f_errors"),
-//     wrapper: 'li'
-//
-// });
-
-/*
-
-var container = $('div.container');
-// validate the form when it is submitted
-var validator = $("#form2").validate({
-    errorContainer: container,
-    errorLabelContainer: $("ol", container),
-    wrapper: 'li'
-});
-
-
-*/
-
