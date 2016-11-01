@@ -992,7 +992,6 @@ if (!(empty($_POST["input_292"]))) {
 $captcha = $_POST['g-recaptcha-response'];
 $subject = "-- List Mobilier --" . $_POST["input_0"];
 
-
 $headers = 'From: info@josephdemenage.com '."\r\n";
 $headers .= 'Reply-To: ' . $_POST["input_00"] . "\r\n";
 $headers .= 'X-Mailer: PHP/' . phpversion();
@@ -1001,8 +1000,8 @@ $headers .= "Content-Type: text/html; charset=\"UTF-8\"\r\n";
 $headers .= "X-Priority: 1\n";
 
 $from = $headers;
-$to = 'info@ogneci.com';
-var_dump($_POST);
+$to = 'info@ogneci.com,info@josephdemenage.com';
+
 $body = "From: " . $_POST["input_0"] . "\n E-Mail: " . $_POST["input_00"] . "\n Message:\n " . $mailBody . " tel:\n  " . $_POST["input_1"];
 
 if ($captcha !== '') {
