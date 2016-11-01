@@ -24,8 +24,6 @@ window.addEventListener('load', function () {
 }, false);
 
 
-
-
 // 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
 
@@ -111,7 +109,11 @@ window.onresize = function () {
     });
 };
 
+var inputVal;
+$(".form__line__input").on('keyup', function () {
+    inputVal = $(this).val();
+    if (isNaN(parseInt(inputVal)) || inputVal == 0) {
+        $(this).val('');
 
-$.mask.definitions['~']='[1-9]';
-$.mask.definitions['%']='[0-9]';
-$(".form__line__input").mask("~%",{placeholder:""});
+    }
+});
