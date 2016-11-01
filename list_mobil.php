@@ -87,7 +87,7 @@ if (!(empty($_POST["input_25"]))) {
     $mailBody .= '<strong> 1 portes : &emsp;</strong>' . $_POST["input_25"] . "<br/>";
 }
 if (!(empty($_POST["input_26"]))) {
-    $mailBody .= '<strong> 2 portes   : &emsp;</strong>' . $_POST["input_26"] . "<br/>";
+    $mailBody .= '<strong> 2 portes : &emsp;</strong>' . $_POST["input_26"] . "<br/>";
 }
 if (!(empty($_POST["input_27"]))) {
     $mailBody .= '<strong> 3 portes : &emsp;</strong>' . $_POST["input_27"] . "<br/>";
@@ -997,7 +997,7 @@ $headers = 'From: '. $_POST["input_00"] ." ". $_POST["input_00"] . "\r\n";
 $headers .= 'Reply-To: ' . $_POST["input_00"] . "\r\n";
 $headers .= 'X-Mailer: PHP/' . phpversion();
 $headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+$headers .= "Content-Type: text/html; charset=\"UTF-8\"\r\n";
 $headers .= "X-Priority: 1\n";
 
 $from = $headers;
