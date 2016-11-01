@@ -151,6 +151,13 @@ a:hover {
 
 //form
 
+.wrapInput {
+  position : relative;
+  }
+
+.error {
+  }
+
 .body {
   display     : block;
   margin      : auto;
@@ -254,30 +261,19 @@ a:hover {
   display : block;
   width   : 300px;
   }
-
+/*
 .errors {
   position         : fixed;
+  display          : none;
   top              : 20px;
-  right            : 30px;
+  left             : 30px;
   width            : 70%;
   min-height       : 100px;
-  max-width        : 300px;
-  z-index          : -1;
+  max-width        : 400px;
+  z-index          : 1;
   background-color : rgb(255, 255, 255);
   box-shadow       : 0 0 30px -10px;
-  opacity          : 0;
-  .transition(~"opacity 170ms ease,top 170ms ease");
-
-  &.show {
-    opacity : 1;
-    z-index : 2;
-    top     : 30px;
-    }
-  .closeBtn {
-
-    }
-
-  }
+  }*/
 
 .form {
   position       : relative;
@@ -389,6 +385,15 @@ a:hover {
       padding        : 5px;
       left           : 0;
       margin         : 0;
+      .transition(all 300ms ease);
+      &.error {
+        border-color : red;
+        left         : -10px;
+        &:focus {
+          .transform(scale(1.1));
+          }
+        }
+
       &--min {
         width  : 15px;
         height : 15px;

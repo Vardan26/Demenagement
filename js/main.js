@@ -111,6 +111,10 @@ window.onresize = function () {
     });
 };
 
-$('#f_errors__close').on('click', function () {
-    $('#f_errors').removeClass('show');
-});
+// $('#f_errors__close').on('click', function () {
+//     $('#f_errors').hide();
+// });
+
+$.mask.definitions['~']='[1-9]';
+$.mask.definitions['%']='[0-9]';
+$(".form__line__input").mask("~%",{placeholder:""});
