@@ -993,7 +993,7 @@ $captcha = $_POST['g-recaptcha-response'];
 $subject = "-- List Mobilier --" . $_POST["input_0"];
 
 
-$headers = 'From: '. $_POST["input_00"] ." ". $_POST["input_00"] . "\r\n";
+$headers = 'From: info@josephdemenage.com '."\r\n";
 $headers .= 'Reply-To: ' . $_POST["input_00"] . "\r\n";
 $headers .= 'X-Mailer: PHP/' . phpversion();
 $headers .= "MIME-Version: 1.0\r\n";
