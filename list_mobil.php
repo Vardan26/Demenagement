@@ -992,7 +992,7 @@ if (!(empty($_POST["input_292"]))) {
 $captcha = $_POST['g-recaptcha-response'];
 $subject = "-- List Mobilier --" . $_POST["input_0"];
 
-$headers = 'From: info@josephdemenage.com '."\r\n";
+$headers = 'From: info@josephdemenage.com ' . "\r\n";
 $headers .= 'Reply-To: ' . $_POST["input_00"] . "\r\n";
 $headers .= 'X-Mailer: PHP/' . phpversion();
 $headers .= "MIME-Version: 1.0\r\n";
@@ -1004,12 +1004,16 @@ $to = 'info@ogneci.com,info@josephdemenage.com';
 
 $body = "From: " . $_POST["input_0"] . "\n E-Mail: " . $_POST["input_00"] . "\n Message:\n " . $mailBody . " tel:\n  " . $_POST["input_1"];
 
-if ($captcha !== '') {
+if ($captcha !== '' && $_POST["input_0"] !== '' && $_POST["input_00"] !== '') {
     if (mail($to, $subject, $body, $from)) {
-        echo '<p>Your message has been sent!</p>';
+        echo '<h1 style="text-align: center;">Votre message a été envoyé!</h1>';
     } else {
-        echo '<p>Something went wrong, go back and try again!</p>';
+        echo '<h1 style="text-align: center;">Quelque chose s\'est mal passé, revenir en arrière et essayer</h1>';
     }
-} else {
-    echo '<p>You answered the anti-spam question incorrectly!</p>';
+} else if ($captcha !== '') {
+    echo '<h1 style="text-align: center;">Vous avez répondu à la question anti-spam</h1>';
+} else if ($_POST["input_0"] !== '') {
+    echo '<h1 style="text-align: center;">Vous n\'avez pas rempli le champ obligatoire pour le nom</h1>';
+} else if ($_POST["input_00"] !== '') {
+    echo '<h1 style="text-align: center;">Vous n\'avez pas rempli le champ obligatoire pour Email</h1>';
 }
