@@ -167,16 +167,18 @@ a:hover {
 .header {
   max-width : 1300px;
   display   : block;
-  margin    : 0 auto;
-  height    : 217px;
-  position  : relative;
   &__logo {
     width   : 75%;
-    display : inline-block;
+    display : block;
+    margin: 0 auto;
+    &__pic {
+      width  : 100%;
+      height : auto;
+      }
     }
   &__form {
-    width      : 22%;
-    display    : inline-block;
+    /* width: 22%; */
+    display: block;
     top        : 15px;
     font-size  : 20px;
     text-align : right;
@@ -261,6 +263,7 @@ a:hover {
   display : block;
   width   : 300px;
   }
+
 /*
 .errors {
   position         : fixed;
