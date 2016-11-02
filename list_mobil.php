@@ -1012,8 +1012,11 @@ if ($captcha !== '' && $_POST["input_0"] !== '' && $_POST["input_00"] !== '') {
     }
 } else if ($captcha !== '') {
     echo '<h1 style="text-align: center;">Vous avez répondu à la question anti-spam</h1>';
+    echo '<h1 style="text-align: center;"> <a href="javascript:history.back()">Aller a la page precedent</a></h1>';
 } else if ($_POST["input_0"] !== '') {
     echo '<h1 style="text-align: center;">Vous n\'avez pas rempli le champ obligatoire pour le nom</h1>';
+    echo '<h1 style="text-align: center;"> <a href="javascript:history.back()">Aller a la page precedent</a></h1>';
 } else if ($_POST["input_00"] !== '') {
     echo '<h1 style="text-align: center;">Vous n\'avez pas rempli le champ obligatoire pour Email</h1>';
+    echo '<h1 style="text-align: center;"><a href="javascript:history.back()">Aller a la page precedent</a></h1>';
 }
