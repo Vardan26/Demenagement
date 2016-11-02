@@ -1002,7 +1002,7 @@ $headers .= "X-Priority: 1\n";
 $from = $headers;
 $to = 'info@ogneci.com,info@josephdemenage.com';
 
-$body = "From: " . $_POST["input_0"] . "\n E-Mail: " . $_POST["input_00"] . "\n Message:\n " . $mailBody . " tel:\n  " . $_POST["input_1"];
+$body = "From: " . $_POST["input_0"] . "\n E-Mail: " . $_POST["input_00"] . "\n Message:\n " . $mailBody ;
 
 if ($captcha !== '' && $_POST["input_0"] !== '' && $_POST["input_00"] !== '') {
     if (mail($to, $subject, $body, $from)) {
