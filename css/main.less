@@ -96,25 +96,35 @@ a:hover {
     width           : auto;
     display         : block;
     font-size       : 30px;
-    font-family     : 'Arial', sans-serif;
-    color           : #7a1608;
+    color           : #3e4095;
+    text-shadow     : 0 0 1px #fff;
+    text-transform  : uppercase;
     letter-spacing  : 3px;
     text-align      : right;
     right           : 4%;
     margin          : 5% 0 3%;
     text-decoration : none;
     font-weight     : 600;
+    &__item {
+      width                   : auto;
+      display                 : block;
+      margin                  : 2% auto;
+      -webkit-animation-delay : 2s;
+      animation-delay         : 2s;
+      a {
+        display : inline-block;
+        padding : 10px;
+        .transition(~"all 400ms ease");
+        }
+      &:hover a {
+        .transform(translateX(20px) rotate(-2deg));
+        background-color : #3e4095;
+        color            : #fff;
+        }
+      }
+
     }
-  &__link__item {
-    width                   : auto;
-    display                 : block;
-    margin                  : 2% auto;
-    -webkit-animation-delay : 2s;
-    animation-delay         : 2s;
-    }
-  &__link__item:hover {
-    color : #d52b2b;
-    }
+
   &__list {
     width    : 100%;
     height   : auto;
@@ -149,8 +159,6 @@ a:hover {
     }
   }
 
-//form
-
 .wrapInput {
   position : relative;
   }
@@ -170,7 +178,7 @@ a:hover {
   &__logo {
     width   : 75%;
     display : block;
-    margin: 0 auto;
+    margin  : 0 auto;
     &__pic {
       width  : 100%;
       height : auto;
@@ -178,7 +186,7 @@ a:hover {
     }
   &__form {
     /* width: 22%; */
-    display: block;
+    display    : block;
     top        : 15px;
     font-size  : 20px;
     text-align : right;
@@ -263,20 +271,6 @@ a:hover {
   display : block;
   width   : 300px;
   }
-
-/*
-.errors {
-  position         : fixed;
-  display          : none;
-  top              : 20px;
-  left             : 30px;
-  width            : 70%;
-  min-height       : 100px;
-  max-width        : 400px;
-  z-index          : 1;
-  background-color : rgb(255, 255, 255);
-  box-shadow       : 0 0 30px -10px;
-  }*/
 
 .form {
   position       : relative;
