@@ -3,6 +3,7 @@
 $mailBody = '<h2><strong>Nome Prenome : </strong>' . $_POST["input_0"] . "</h2>";
 $mailBody .= '<h2><strong>Email : </strong>' . $_POST["input_00"] . "</h2>";
 
+$mailBody .= '<hr/><hr/><h1> Mobilier</h1>';
 if (!(empty($_POST["input_1"]))) {
     $mailBody .= '<hr/><h2> Appareil de musculation: </h2>';
     $mailBody .= '<strong> Appareil de musculation : </strong>' . $_POST["input_1"] . "<br/>";
