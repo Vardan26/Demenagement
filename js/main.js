@@ -117,3 +117,26 @@ $(".form__line__input").on('keyup', function () {
 
     }
 });
+
+
+var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    direction: 'vertical',
+    speed: 1000,
+    duration: 1000,
+    spaceBetween: 30,
+    mousewheelControl: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    grabCursor: true,
+    effect: 'cube',
+    cube: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94
+    },
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev'
+});
