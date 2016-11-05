@@ -119,7 +119,7 @@ $(".form__line__input").on('keyup', function () {
 });
 
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-container1', {
     pagination: '.swiper-pagination',
     paginationClickable: true,
     direction: 'vertical',
