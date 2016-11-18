@@ -66,7 +66,7 @@ if (!(empty($_POST["input_12"])) || !(empty($_POST["input_13"])) || !(empty($_PO
 }
 
 
-if (!(empty($_POST["input_15"])) || ){
+if (!(empty($_POST["input_15"])) || !(empty($_POST["input_16"])) || !(empty($_POST["input_17"])) || !(empty($_POST["input_18"]))) {
     $mailBody .= '<hr/><h2> Banc: </h2>';
     if (!(empty($_POST["input_15"]))) {
         $mailBody .= '<strong>  Bois : </strong>' . $_POST["input_15"] . "<br/>";
@@ -135,19 +135,17 @@ if (!(empty($_POST["input_29"])) || !(empty($_POST["input_30"]))) {
     }
 }
 
-
 if (!(empty($_POST["input_31"]))) {
     $mailBody .= '<hr/><h2> Bonnetière, Homme debout : </h2>';
     $mailBody .= '<strong>Bonnetière, Homme debout : </strong>' . $_POST["input_31"] . "<br/>";
 }
-
 
 if (!(empty($_POST["input_32"]))) {
     $mailBody .= '<hr/><h2> Bouteille de vin : </h2>';
     $mailBody .= '<strong>Bouteille de vin: </strong>' . $_POST["input_32"] . "<br/>";
 }
 
-if (!(empty($_POST["input_33"])) || !(empty($_POST["input_34"])) || !(empty($_POST["input_35"])) || !(empty($_POST["input_36"])) || !(empty($_POST["input_37"]))) {
+if (!(empty($_POST["input_33"])) || !(empty($_POST["input_34"])) || !(empty($_POST["input_35"])) || !(empty($_POST["input_36"])) || isset($_POST["input_37"])) {
     $mailBody .= '<hr/><h2> Buffet bas  : </h2>';
     if (!(empty($_POST["input_33"]))) {
         $mailBody .= '<strong>1 portes  : </strong>' . $_POST["input_33"] . "<br/>";
@@ -252,7 +250,6 @@ if (!(empty($_POST["input_57"])) || !(empty($_POST["input_58"]))) {
     if (!(empty($_POST["input_58"]))) {
         $mailBody .= '<strong>Plastique  : </strong>' . $_POST["input_58"] . "<br/>";
     }
-
 }
 
 if (!(empty($_POST["input_59"]))) {
@@ -480,7 +477,6 @@ if (!(empty($_POST["input_107"])) || !(empty($_POST["input_108"])) || !(empty($_
     if (!(empty($_POST["input_109"]))) {
         $mailBody .= '<strong> Séchan  : </strong>' . $_POST["input_109"] . "<br/>";
     }
-
 }
 
 if (!(empty($_POST["input_110"]))) {
@@ -499,7 +495,6 @@ if (!(empty($_POST["input_111"])) || !(empty($_POST["input_112"])) || !(empty($_
     if (!(empty($_POST["input_113"]))) {
         $mailBody .= '<strong> Parapluie : </strong>' . $_POST["input_113"] . "<br/>";
     }
-
 }
 
 if (!(empty($_POST["input_114"])) || !(empty($_POST["input_115"])) || !(empty($_POST["input_116"])) || !(empty($_POST["input_117"]))) {
