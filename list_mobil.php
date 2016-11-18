@@ -4,42 +4,51 @@ $mailBody = '<h2><strong>Nome Prenome : </strong>' . $_POST["input_0"] . "</h2>"
 $mailBody .= '<h2><strong>Email : </strong>' . $_POST["input_00"] . "</h2>";
 
 $mailBody .= '<hr/><hr/><h1> Mobilier</h1>';
-if (!(empty($_POST["input_1"]))) {
+
+if (!(empty($_POST["input_1"])) || !(empty($_POST["input_2"]))) {
     $mailBody .= '<hr/><h2> Appareil de musculation: </h2>';
-    $mailBody .= '<strong> Appareil de musculation : </strong>' . $_POST["input_1"] . "<br/>";
+    if (!(empty($_POST["input_1"]))) {
+        $mailBody .= '<strong> Appareil de musculation : </strong>' . $_POST["input_1"] . "<br/>";
+    }
+    if (!(empty($_POST["input_2"]))) {
+        $mailBody .= "<span> <strong>Descriptif:</strong>" . $_POST["input_2"] . ": </span><br/>";
+    }
 }
-if (!(empty($_POST["input_2"]))) {
-    $mailBody .= "<span> <strong>Descriptif:</strong>" . $_POST["input_2"] . ": </span><br/>";
-}
-if (!(empty($_POST["input_3"]))) {
+
+if (!(empty($_POST["input_3"])) || !(empty($_POST["input_4"])) || !(empty($_POST["input_5"])) || !(empty($_POST["input_6"])) || !(empty($_POST["input_7"]))) {
     $mailBody .= '<hr/><h2> Aquarium : </h2>';
-    $mailBody .= '<strong> 20 l. à 75 l. :  </strong>' . $_POST["input_3"] . "<br/>";
+    if (!(empty($_POST["input_3"]))) {
+        $mailBody .= '<strong> 20 l. à 75 l. :  </strong>' . $_POST["input_3"] . "<br/>";
+    }
+    if (!(empty($_POST["input_4"]))) {
+        $mailBody .= '<strong> 75 l. à 250 l.:  </strong>' . $_POST["input_4"] . "<br/>";
+    }
+    if (!(empty($_POST["input_5"]))) {
+        $mailBody .= '<strong> Autre : </strong>' . $_POST["input_5"] . "<br/>";
+    }
+    if (!(empty($_POST["input_6"]))) {
+        $mailBody .= '<strong> Notes : </strong>' . $_POST["input_6"] . "<br/>";
+    }
+    if (!(empty($_POST["input_7"]))) {
+        $mailBody .= '<strong> Argentier : </strong>' . $_POST["input_7"] . "<br/>";
+    }
 }
-if (!(empty($_POST["input_4"]))) {
-    $mailBody .= '<strong> 75 l. à 250 l.:  </strong>' . $_POST["input_4"] . "<br/>";
-}
-if (!(empty($_POST["input_5"]))) {
-    $mailBody .= '<strong> Autre : </strong>' . $_POST["input_5"] . "<br/>";
-}
-if (!(empty($_POST["input_6"]))) {
-    $mailBody .= '<strong> Notes : </strong>' . $_POST["input_6"] . "<br/>";
-}
-if (!(empty($_POST["input_7"]))) {
-    $mailBody .= '<strong> Argentier : </strong>' . $_POST["input_7"] . "<br/>";
-}
-if (!(empty($_POST["input_8"]))) {
+if (!(empty($_POST["input_8"])) || !(empty($_POST["input_9"])) || !(empty($_POST["input_10"])) || !(empty($_POST["input_11"]))){
     $mailBody .= '<hr/><h2> Armoire  : </h2>';
-    $mailBody .= '<strong> 1 portes: </strong>' . $_POST["input_8"] . "<br/>";
+    if (!(empty($_POST["input_8"]))) {
+        $mailBody .= '<strong> 1 portes: </strong>' . $_POST["input_8"] . "<br/>";
+    }
+    if (!(empty($_POST["input_9"]))) {
+        $mailBody .= '<strong> 2 portes : </strong>' . $_POST["input_9"] . "<br/>";
+    }
+    if (!(empty($_POST["input_10"]))) {
+        $mailBody .= '<strong> 3 portes : </strong>' . $_POST["input_10"] . "<br/>";
+    }
+    if (!(empty($_POST["input_11"]))) {
+        $mailBody .= '<strong> 4 portes : </strong>' . $_POST["input_11"] . "<br/>";
+    }
 }
-if (!(empty($_POST["input_9"]))) {
-    $mailBody .= '<strong> 2 portes : </strong>' . $_POST["input_9"] . "<br/>";
-}
-if (!(empty($_POST["input_10"]))) {
-    $mailBody .= '<strong> 3 portes : </strong>' . $_POST["input_10"] . "<br/>";
-}
-if (!(empty($_POST["input_11"]))) {
-    $mailBody .= '<strong> 4 portes : </strong>' . $_POST["input_11"] . "<br/>";
-}
+
 if (!(empty($_POST["input_12"]))) {
     $mailBody .= '<hr/><h2> Armoire métallique : </h2>';
     $mailBody .= '<strong> 1 portes: </strong>' . $_POST["input_12"] . "<br/>";
@@ -1003,7 +1012,7 @@ $headers .= "X-Priority: 1\n";
 $from = $headers;
 $to = 'info@ogneci.com,info@josephdemenage.com';
 
-$body = "From: " . $_POST["input_0"] . "\n E-Mail: " . $_POST["input_00"] . "\n Message:\n " . $mailBody ;
+$body = "From: " . $_POST["input_0"] . "\n E-Mail: " . $_POST["input_00"] . "\n Message:\n " . $mailBody;
 
 if ($captcha !== '' && $_POST["input_0"] !== '' && $_POST["input_00"] !== '') {
     if (mail($to, $subject, $body, $from)) {
