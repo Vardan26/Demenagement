@@ -3,7 +3,6 @@
 @import "normalize.less";
 //@import "swiper.min.less";
 @import "animate.less";
-
 @import "default.less";
 
 //generates fonts using http://transfonter.org/
@@ -399,9 +398,12 @@ a:hover {
         }
       }
     &__label {
-      display   : inline-block;
-      width     : 12%;
-      font-size : 13px;
+      display       : inline-block;
+      width         : 12%;
+      font-size     : 13px;
+      white-space   : nowrap;
+      overflow      : hidden;
+      text-overflow : ellipsis;
       &--1 {
         width       : 29%;
         height      : auto;
